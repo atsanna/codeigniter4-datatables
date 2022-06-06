@@ -1,0 +1,73 @@
+{
+	"name": "atsanna/codeigniter4-datatables",
+	"type": "project",
+	"description": "Datatables support for CodeIgniter 4",
+	"homepage": "https://codeigniter4.it",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Antonio Sanna",
+			"homepage": "https://github.com/atsanna",
+			"role": "Developer"
+		}
+	],
+	"config": {
+		"secure-http": false,
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"optimize-autoloader": true
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"php": "^7.4 || ^8.0",
+		"ext-json": "*",
+		"codeigniter4/framework": "^4.2",
+		"components/font-awesome": "^6.1",
+		"league/commonmark": "^2.0",
+		"roave/security-advisories": "dev-latest",
+		"spatie/commonmark-highlighter": "^3.0"
+	},
+	"require-dev": {
+		"codeigniter/coding-standard": "^1.1",
+		"fakerphp/faker": "^1.9",
+		"mikey179/vfsstream": "^1.6",
+		"nexusphp/cs-config": "^3.1",
+		"nexusphp/tachycardia": "^1.0",
+		"phpstan/phpstan": "^1.1",
+		"phpunit/phpunit": "^9.1",
+		"psr/container": "^2.0"
+	},
+	"suggest": {
+		"ext-fileinfo": "Improves mime type detection for files"
+	},
+	"autoload": {
+		"psr-4": {
+			"Datatables\\": "src"
+		},
+		"exclude-from-classmap": [
+			"**/Database/Migrations/**"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests",
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"prefer-stable": true,
+	"scripts": {
+		"analyze": "phpstan analyze",
+		"ci": [
+			"Composer\\Config::disableProcessTimeout",
+			"@deduplicate",
+			"@analyze",
+			"@test",
+			"@inspect",
+			"@style"
+		],
+		"deduplicate": "phpcpd src/",
+		"inspect": "deptrac analyze --cache-file=build/deptrac.cache",
+		"style": "php-cs-fixer fix --verbose --ansi --using-cache=no",
+		"test": "phpunit"
+	}
+}
