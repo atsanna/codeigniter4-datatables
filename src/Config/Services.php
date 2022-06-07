@@ -26,7 +26,7 @@ class Services extends BaseService
      *
      * @return DataTables|mixed
      */
-    public static function bonfire(bool $getShared = true)
+    public static function datatables(bool $getShared = true)
     {
         if ($getShared) {
             return static::getSharedInstance('datatables');
