@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of Datatables.
+ * This file is part of DataTables.
  *
  * (c) Antonio Sanna <atsanna@tiscali.it>
  *
@@ -9,11 +9,18 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace Datatables;
+namespace atsanna\Datatables;
 
 include_once __DIR__ .'/Common.php';
 
 class Datatables
 {
+    /**
+     * Sets up initialize module.
+     */
+    public function boot()
+    {
+
+    }
     
 }

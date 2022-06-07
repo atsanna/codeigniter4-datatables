@@ -1,6 +1,6 @@
 <?php
 
-namespace Datatables\Config;
+namespace atsanna\Datatables\Config;
 
 use CodeIgniter\Config\BaseConfig;
 

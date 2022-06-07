@@ -38,7 +38,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Datatables\\": "src"
+			"atsanna\\DataTables\\": "src"
 		},
 		"exclude-from-classmap": [
 			"**/Database/Migrations/**"
