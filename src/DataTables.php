@@ -9,11 +9,11 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace atsanna\Datatables;
+namespace atsanna\DataTables;
 
 include_once __DIR__ .'/Common.php';
 
-class Datatables
+class DataTables
 {
     /**
      * Sets up initialize module.

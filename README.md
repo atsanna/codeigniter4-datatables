@@ -5,6 +5,6 @@
 [![GitHub license](https://img.shields.io/github/license/atsanna/codeigniter4-datatables)](https://github.com/atsanna/codeigniter4-datatables/blob/main/LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/atsanna/codeigniter4-datatables/pulls)
 
-Datatables support for CodeIgniter 4
+DataTables support for CodeIgniter 4
 
 ## Warning: this is a non-functional experimental version!

@@ -1,7 +1,7 @@
 {
 	"name": "atsanna/codeigniter4-datatables",
 	"type": "project",
-	"description": "Datatables support for CodeIgniter 4",
+	"description": "DataTables support for CodeIgniter 4",
 	"homepage": "https://github.com/atsanna/codeigniter4-datatables",
 	"license": "MIT",
 	"authors": [

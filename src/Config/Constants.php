@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of Datatables.
+ * This file is part of DataTables.
  *
  * (c) Antonio Sanna <atsanna@tiscali.it>
  *

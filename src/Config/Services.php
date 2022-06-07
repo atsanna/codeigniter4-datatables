@@ -1,8 +1,8 @@
 <?php
 
-namespace atsanna\Datatables\Config;
+namespace atsanna\DataTables\Config;
 
-use atsanna\Datatables\Datatables;
+use atsanna\DataTables\DataTables;
 use CodeIgniter\Config\BaseService;
 use Config\Services as AppServices;
 
@@ -22,9 +22,9 @@ use Config\Services as AppServices;
 class Services extends BaseService
 {
     /**
-     * Core utility class for Datatables's system.
+     * Core utility class for DataTables's system.
      *
-     * @return Datatables|mixed
+     * @return DataTables|mixed
      */
     public static function bonfire(bool $getShared = true)
     {
@@ -32,6 +32,6 @@ class Services extends BaseService
             return static::getSharedInstance('datatables');
         }
 
-        return new Datatables();
+        return new DataTables();
     }
 }
