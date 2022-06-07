@@ -6,7 +6,10 @@
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Antonio Sanna"
+			"name": "Antonio Sanna",
+            "email": "atsanna@tiscali.it",
+            "homepage": "https://gist.github.com/atsannade",
+            "role": "Developer"
 		}
 	],
 	"minimum-stability": "dev",
@@ -46,5 +49,11 @@
 			"Tests\\": "tests",
 			"Tests\\Support\\": "tests/_support"
 		}
-	}
+	},
+	"funding": [
+        {
+            "type": "other",
+            "url": "https://www.paypal.me/atsanna"
+        }
+    ]
 }
