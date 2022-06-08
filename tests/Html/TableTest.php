@@ -20,13 +20,15 @@ final class TableTest extends TestCase
         $this->table = new Table();
     }
 
-    /*public function testGetModelisNull(): void
+    public function testGetModelisNull(): void
     {
+        $tableModel = $this->table->getModel() ?? null;
+
         $this->assertNotNull( 
-            $this->table->getModel(), 
+            $tableModel, 
             "model is null or not"
         ); 
-    }*/
+    }
 
     public function testGetModelisNotNull(): void
     {
