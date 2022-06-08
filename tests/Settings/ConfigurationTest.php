@@ -63,4 +63,49 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('true',  $this->configuration->getOrdering());
     }
 
+    public function testSetPaging(): void
+    {
+        $this->assertSame('true',  $this->configuration->getPaging());
+
+        $this->configuration->setPaging(false);
+        $this->assertSame('false',  $this->configuration->getPaging());
+
+        $this->configuration->setPaging(true);
+        $this->assertSame('true',  $this->configuration->getPaging());
+    }
+
+    public function testSetPagingType(): void
+    {
+        $this->assertSame('full_numbers',  $this->configuration->getPagingType());
+
+        $this->configuration->setPagingType('numbers');
+        $this->assertSame('numbers',  $this->configuration->getPagingType());
+
+        $this->configuration->setPagingType('simple');
+        $this->assertSame('simple',  $this->configuration->getPagingType());
+
+        $this->configuration->setPagingType('simple_numbers');
+        $this->assertSame('simple_numbers',  $this->configuration->getPagingType());
+
+        $this->configuration->setPagingType('full');
+        $this->assertSame('full',  $this->configuration->getPagingType());
+
+        $this->configuration->setPagingType('full_numbers');
+        $this->assertSame('full_numbers',  $this->configuration->getPagingType());
+        
+        $this->configuration->setPagingType('first_last_numbers');
+        $this->assertSame('first_last_numbers',  $this->configuration->getPagingType());
+    }
+
+    public function testSetProcessing(): void
+    {
+        $this->assertSame('true',  $this->configuration->getProcessing());
+
+        $this->configuration->setProcessing(false);
+        $this->assertSame('false',  $this->configuration->getProcessing());
+
+        $this->configuration->setProcessing(true);
+        $this->assertSame('true',  $this->configuration->getProcessing());
+    }
+
 }
