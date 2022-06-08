@@ -218,7 +218,7 @@ class DataTablesScript
 	 * @param string $script
 	 * @return string
 	 */
-	public function getJavascript($script='')
+	public function getJavascript($script=''): string
 	{
 		//$javascript = $this->minimizeJavascript( $this->getDocumentReady($script) );
 		$javascript_custom = $this->minimizeJavascript( $script );

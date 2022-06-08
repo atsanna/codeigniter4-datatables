@@ -51,14 +51,14 @@ final class TableTest extends TestCase
 
     }
 
-    public function testFetch_data(): void
+    /*public function testFetch_data(): void
     {
 
         $this->table->setModel(new UserModel());
-        
+
         $this->assertIsArray($this->table->fetch_data());
 
-    }
+    }*/
 
     
 }
