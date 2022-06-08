@@ -91,9 +91,9 @@ class Column
 		/**
 		 * @param string $searchable
 		 */
-		public function setSearchable(string $searchable): Column
+		public function setSearchable(bool $searchable): Column
 		{
-			$this->searchable = $searchable;
+			$this->searchable = $searchable ? 'true' : 'false';
 
 			return $this;
 		}
@@ -121,9 +121,9 @@ class Column
 		/**
 		 * @param string $visible
 		 */
-		public function setVisible(string $visible): Column
+		public function setVisible(bool $visible): Column
 		{
-			$this->visible = $visible;
+			$this->visible = $visible ? 'true' : 'false';
 
 			return $this;
 		}

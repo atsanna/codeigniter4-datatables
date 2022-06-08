@@ -171,4 +171,13 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('false',  $this->configuration->getStateSave());
     }
 
+    public function testSetLengthMenu(): void
+    {
+        $this->assertSame('[[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]]',  $this->configuration->getLengthMenu());
+
+        $this->configuration->setLengthMenu('[[10, 25, -1], [10, 25, "All"]]');
+        $this->assertSame('[[10, 25, -1], [10, 25, "All"]]',  $this->configuration->getLengthMenu());
+
+    }
+
 }

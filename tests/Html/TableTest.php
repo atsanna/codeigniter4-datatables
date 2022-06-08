@@ -13,12 +13,14 @@ use \Tests\Support\TestCase;
 final class TableTest extends TestCase
 {
     protected $table;
+    protected $tableConfiguration;
 
     protected function setUp(): void
     {
         parent::setUp();
 
         $this->table = new Table();
+        $this->tableConfiguration = $this->table->getConfiguration();
     }
 
     public function testGetModelisNull(): void
@@ -45,9 +47,11 @@ final class TableTest extends TestCase
     public function testGetConfigurationInstanceOf(): void
     {
 
-        $tableConfiguration = $this->table->getConfiguration() ?? null;
-
-        $this->assertInstanceOf(Configuration::class, $tableConfiguration);
+        $this->assertInstanceOf(Configuration::class, $this->table->getConfiguration());
 
     }
+
+
+
+
 }
