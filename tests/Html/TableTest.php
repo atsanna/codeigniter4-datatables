@@ -17,12 +17,12 @@ final class TableTest extends TestCase
     {
         parent::setUp();
 
-        $this->table = new Table();
+        $this->table = new Table( new UserModel() );
     }
 
     public function testGetModelisNull(): void
     {
-        $this->assertNull( 
+        $this->assertNotNull( 
             $this->table->getModel(), 
             "model is null or not"
         ); 
