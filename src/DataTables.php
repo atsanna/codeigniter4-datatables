@@ -14,6 +14,7 @@ namespace atsanna\DataTables;
 include_once __DIR__ .'/Common.php';
 include_once __DIR__ .'/Config/Constants.php';
 
+use CodeIgniter\Model;
 use atsanna\DataTables\Html\Table;
 use atsanna\DataTables\Settings\Column;
 use atsanna\DataTables\Javascript\DataTablesScript;
