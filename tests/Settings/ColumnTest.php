@@ -59,4 +59,12 @@ final class ColumnTest extends TestCase
         $this->assertSame('true',  $this->column->getVisible());
     }
 
+    public function testSetRender(): void
+    {
+        $this->assertSame('',  $this->column->getRender());
+
+        $this->column->setRender('Test');
+        $this->assertSame('Test',  $this->column->getRender());
+    }
+
 }
