@@ -54,13 +54,13 @@ final class ConfigurationTest extends TestCase
 
     public function testSetOrdering(): void
     {
-        $this->assertSame('false',  $this->configuration->getOrdering());
-
-        $this->configuration->setOrdering(true);
         $this->assertSame('true',  $this->configuration->getOrdering());
 
-        $this->configuration->setOrdering(false);
+        $this->configuration->setOrdering(true);
         $this->assertSame('false',  $this->configuration->getOrdering());
+
+        $this->configuration->setOrdering(false);
+        $this->assertSame('true',  $this->configuration->getOrdering());
     }
 
 }
