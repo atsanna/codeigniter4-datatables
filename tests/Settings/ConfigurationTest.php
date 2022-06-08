@@ -127,4 +127,15 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('600px',  $this->configuration->getScrollY());
     }
 
+    public function testSetScrollCollapse(): void
+    {
+        $this->assertSame('false',  $this->configuration->getScrollCollapse());
+
+        $this->configuration->setScrollCollapse(true);
+        $this->assertSame('true',  $this->configuration->getScrollCollapse());
+
+        $this->configuration->setScrollCollapse(false);
+        $this->assertSame('false',  $this->configuration->getScrollCollapse());
+    }
+
 }
