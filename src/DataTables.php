@@ -22,16 +22,16 @@ use atsanna\DataTables\Javascript\DataTablesScript;
 class DataTables
 {
 
-    protected $table;
-    protected $dataTablesScript;
+    protected $_table;
+    protected $_dataTablesScript;
 
     /**
      * Sets up initialize module and return this object.
      */
     public function boot(Model $model = null): DataTables
     {
-        $this->dataTablesScript = new DataTablesScript();
-        $this->table = new Table($model);
+        $this->_dataTablesScript = new DataTablesScript();
+        $this->_table = new Table($model);
 
         return $this;
     }
@@ -40,14 +40,14 @@ class DataTables
     * Return Table Object
     */
     public function table(){
-        return $this->table;
+        return $this->_table;
     }
 
     /*
     * Return DataTablesScript Object
     */
     public function dataTablesScript(){
-        return $this->dataTablesScript;
+        return $this->_dataTablesScript;
     }
 
     /*
