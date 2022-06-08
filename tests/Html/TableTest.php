@@ -33,9 +33,11 @@ final class TableTest extends TestCase
 		$model = new UserModel();
         $this->table->setModel($model);
 
-        $this->assertNotNull( 
-            $this->table->getModel(), 
-            "model is not null or not"
-        ); 
+        $this->assertInstanceOf("UserModel",$this->table->getModel());
+
+        $this->assertInstanceOf("\\CodeIgniter\\Shield\\Models\\UserModel", $this->table->getModel());
+
+        $this->assertInstanceOf(UserModel::class, $this->table->getModel());
+
     }
 }
