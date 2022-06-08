@@ -60,13 +60,4 @@ final class TableTest extends TestCase
 
     }
 
-    public function testGetTableData(): void
-    {
-
-        $tableData = $this->table->getTableData() ?? null;
-
-        $this->assertIsArray($tableData);
-
-    }
-
 }
