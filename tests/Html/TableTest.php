@@ -24,7 +24,7 @@ final class TableTest extends TestCase
     {
         $tableModel = $this->table->getModel() ?? null;
 
-        $this->assertNotNull( 
+        $this->assertNull( 
             $tableModel, 
             "model is null or not"
         ); 
