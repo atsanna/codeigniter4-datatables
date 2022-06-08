@@ -23,7 +23,7 @@ final class DataTablesScriptTest extends TestCase
     public function testGetJavascript(): void
     {
 
-        $this->assertStringContainsString('script', $this->getJavascript());
+        $this->assertStringContainsString('script', $this->dataTablesScript->getJavascript());
 
     }
 
