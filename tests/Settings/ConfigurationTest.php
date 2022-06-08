@@ -108,4 +108,23 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('true',  $this->configuration->getProcessing());
     }
 
+    public function testSetScrollX(): void
+    {
+        $this->assertSame('true',  $this->configuration->getScrollX());
+
+        $this->configuration->setScrollX(false);
+        $this->assertSame('false',  $this->configuration->getScrollX());
+
+        $this->configuration->setScrollX(true);
+        $this->assertSame('true',  $this->configuration->getScrollX());
+    }
+
+    public function testSetScrollY(): void
+    {
+        $this->assertSame('200px',  $this->configuration->getScrollY());
+
+        $this->configuration->setScrollY('600px');
+        $this->assertSame('600px',  $this->configuration->getScrollY());
+    }
+
 }
