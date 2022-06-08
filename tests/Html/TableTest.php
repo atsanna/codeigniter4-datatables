@@ -4,6 +4,7 @@ namespace Tests\Html;
 
 use \CodeIgniter\Shield\Models\UserModel;
 use \atsanna\DataTables\Html\Table;
+use \atsanna\DataTables\Settings\Configuration;
 use \Tests\Support\TestCase;
 
 /**
@@ -30,7 +31,7 @@ final class TableTest extends TestCase
         ); 
     }
 
-    public function testGetModelisNotNull(): void
+    public function testGetModelInstanceOf(): void
     {
 		$model = new UserModel();
         $this->table->setModel($model);
@@ -38,6 +39,15 @@ final class TableTest extends TestCase
         $tableModel = $this->table->getModel() ?? null;
 
         $this->assertInstanceOf(UserModel::class, $tableModel);
+
+    }
+
+    public function testGetConfigurationInstanceOf(): void
+    {
+
+        $tableConfiguration = $this->table->Configuration() ?? null;
+
+        $this->assertInstanceOf(Configuration::class, $tableConfiguration);
 
     }
 }
