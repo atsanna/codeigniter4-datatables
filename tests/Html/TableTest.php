@@ -45,7 +45,7 @@ final class TableTest extends TestCase
     public function testGetConfigurationInstanceOf(): void
     {
 
-        $tableConfiguration = $this->table->Configuration() ?? null;
+        $tableConfiguration = $this->table->getConfiguration() ?? null;
 
         $this->assertInstanceOf(Configuration::class, $tableConfiguration);
 
