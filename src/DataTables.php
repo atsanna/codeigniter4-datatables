@@ -12,6 +12,7 @@
 namespace atsanna\DataTables;
 
 include_once __DIR__ .'/Common.php';
+include_once __DIR__ .'/Config/Constants.php';
 
 class DataTables
 {
