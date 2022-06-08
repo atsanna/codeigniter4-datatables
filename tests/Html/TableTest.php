@@ -51,20 +51,6 @@ final class TableTest extends TestCase
 
     }
 
-    public function testGetFieldsFromModel(): void
-    {
-
-        $this->assertIsArray($this->table->getFieldsFromModel());
-
-    }
-
-    public function testGetTableData(): void
-    {
-
-        $this->assertIsArray($this->table->getTableData());
-
-    }
-
     public function testFetch_data(): void
     {
 
