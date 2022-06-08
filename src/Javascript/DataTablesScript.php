@@ -157,6 +157,7 @@ class DataTablesScript
 				for ($x=0; $x<count($configuration->getColumns()); $x++)
 				{
 					$column = $configuration->getColumns()[$x];
+					dd($column);
 					$result .= "
 					{ 
 					'data': '" . $column->getName() . "',
