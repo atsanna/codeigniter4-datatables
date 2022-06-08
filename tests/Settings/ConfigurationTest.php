@@ -138,4 +138,37 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('false',  $this->configuration->getScrollCollapse());
     }
 
+    public function testsetSearching(): void
+    {
+        $this->assertSame('true',  $this->configuration->getSearching());
+
+        $this->configuration->setSearching(false);
+        $this->assertSame('false',  $this->configuration->getSearching());
+
+        $this->configuration->setSearching(true);
+        $this->assertSame('true',  $this->configuration->getSearching());
+    }
+
+    public function testSetServerSide(): void
+    {
+        $this->assertSame('true',  $this->configuration->getServerSide());
+
+        $this->configuration->setServerSide(false);
+        $this->assertSame('false',  $this->configuration->getServerSide());
+
+        $this->configuration->setServerSide(true);
+        $this->assertSame('true',  $this->configuration->getServerSide());
+    }
+
+    public function testSetStateSave(): void
+    {
+        $this->assertSame('false',  $this->configuration->getStateSave());
+
+        $this->configuration->setStateSave(true);
+        $this->assertSame('true',  $this->configuration->getStateSave());
+
+        $this->configuration->setStateSave(false);
+        $this->assertSame('false',  $this->configuration->getStateSave());
+    }
+
 }
