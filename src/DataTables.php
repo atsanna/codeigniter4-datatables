@@ -14,15 +14,39 @@ namespace atsanna\DataTables;
 include_once __DIR__ .'/Common.php';
 include_once __DIR__ .'/Config/Constants.php';
 
+use atsanna\DataTables\Html\Table;
+use atsanna\DataTables\Settings\Column;
+use atsanna\DataTables\Javascript\DataTablesScript;
+
 class DataTables
 {
 
+    protected $table;
+    protected $dataTablesScript;
+
     /**
-     * Sets up initialize module.
+     * Sets up initialize module and return this object.
      */
-    public function boot()
+    public function boot(Model $model = null): DataTables
     {
-        
+        $this->dataTablesScript = new DataTablesScript();
+        $this->table = new Table($model);
+
+        return $this;
+    }
+
+    /*
+    * Return Table Object
+    */
+    public function table(){
+        return $this->table;
+    }
+
+    /*
+    * Return DataTablesScript Object
+    */
+    public function dataTablesScript(){
+        return $this->dataTablesScript;
     }
 
     /*
