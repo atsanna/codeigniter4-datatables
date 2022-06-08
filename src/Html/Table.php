@@ -91,7 +91,7 @@ class Table
 		/**
 		 * @return Model
 		 */
-		public function getModel(): Model
+		public function getModel(): ?Model
 		{
 			return $this->model;
 		}
