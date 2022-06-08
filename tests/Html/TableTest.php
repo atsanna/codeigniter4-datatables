@@ -17,16 +17,16 @@ final class TableTest extends TestCase
     {
         parent::setUp();
 
-        $this->table = new Table( new UserModel() );
+        $this->table = new Table();
     }
 
-    public function testGetModelisNull(): void
+    /*public function testGetModelisNull(): void
     {
         $this->assertNotNull( 
             $this->table->getModel(), 
             "model is null or not"
         ); 
-    }
+    }*/
 
     public function testGetModelisNotNull(): void
     {
