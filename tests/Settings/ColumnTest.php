@@ -21,42 +21,42 @@ final class ColumnTest extends TestCase
 
     public function testSetSearchable(): void
     {
-        $this->assertSame('false',  $this->configuration->getSearchable());
+        $this->assertSame('false',  $this->column->getSearchable());
 
-        $this->configuration->setSearchable(true);
-        $this->assertSame('true',  $this->configuration->getSearchable());
+        $this->column->setSearchable(true);
+        $this->assertSame('true',  $this->column->getSearchable());
 
-        $this->configuration->setSearchable(false);
-        $this->assertSame('false',  $this->configuration->getSearchable());
+        $this->column->setSearchable(false);
+        $this->assertSame('false',  $this->column->getSearchable());
     }
 
     public function testSetName(): void
     {
-        $this->assertSame('',  $this->configuration->getName());
+        $this->assertSame('',  $this->column->getName());
 
-        $this->configuration->setName('Test');
-        $this->assertSame('Test',  $this->configuration->getName());
+        $this->column->setName('Test');
+        $this->assertSame('Test',  $this->column->getName());
 
     }
 
     public function testSetTitle(): void
     {
-        $this->assertSame('',  $this->configuration->getTitle());
+        $this->assertSame('',  $this->column->getTitle());
 
-        $this->configuration->setTitle('Test');
-        $this->assertSame('Test',  $this->configuration->getTitle());
+        $this->column->setTitle('Test');
+        $this->assertSame('Test',  $this->column->getTitle());
 
     }
 
     public function testSetVisible(): void
     {
-        $this->assertSame('true',  $this->configuration->getVisible());
+        $this->assertSame('true',  $this->column->getVisible());
 
-        $this->configuration->setVisible(false);
-        $this->assertSame('false',  $this->configuration->getVisible());
+        $this->column->setVisible(false);
+        $this->assertSame('false',  $this->column->getVisible());
 
-        $this->configuration->setVisible(true);
-        $this->assertSame('true',  $this->configuration->getVisible());
+        $this->column->setVisible(true);
+        $this->assertSame('true',  $this->column->getVisible());
     }
 
 }
