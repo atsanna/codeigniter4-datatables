@@ -15,12 +15,20 @@ include_once __DIR__ .'/Common.php';
 
 class DataTables
 {
+
     /**
      * Sets up initialize module.
      */
     public function boot()
     {
+        
+    }
 
+    /*
+    * Return DataTables Version
+    */
+    public function getVersion() {
+        return DATATABLES_VERSION;
     }
     
 }

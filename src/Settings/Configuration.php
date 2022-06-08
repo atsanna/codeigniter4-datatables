@@ -1,9 +1,20 @@
-<?php namespace atsanna\DataTables\Settings;
+<?php
 
 /**
- * Class Ajax
+ * This file is part of DataTables.
  *
- * @package atsanna\DataTables\Javascript
+ * (c) Antonio Sanna <atsanna@tiscali.it>
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+namespace atsanna\DataTables\Settings;
+
+/**
+ * Class Configuration
+ *
+ * @package atsanna\DataTables\Settings
  */
 class Configuration
 {
