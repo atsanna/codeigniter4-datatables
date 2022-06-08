@@ -17,9 +17,9 @@ class DataTablesScript
 	 */
 	protected $css =
 		[
-			'//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css',
-			'//cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css',
-			'//cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css',
+			'//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.css',
+			'//cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css',
+			'//cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css',
 		];
 
 	/**
@@ -29,11 +29,11 @@ class DataTablesScript
 	 */
 	protected $javascript =
 		[
-			'//code.jquery.com/jquery-3.5.1.js',
-			'//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js',
-			'//cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js',
-			'//cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js',
-			'//cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js',
+			'//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js',
+			'//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js',
+			'//cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js',
+			'//cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js',
+			'//cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js',
 		];
 
 
