@@ -2,9 +2,9 @@
 
 namespace Tests\Html;
 
-use CodeIgniter\Shield\Models\UserModel;
-use atsanna\DataTables\Html\Table;
-use Tests\Support\TestCase;
+use \CodeIgniter\Shield\Models\UserModel;
+use \atsanna\DataTables\Html\Table;
+use \Tests\Support\TestCase;
 
 /**
  * @internal
