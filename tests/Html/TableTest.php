@@ -20,7 +20,7 @@ final class TableTest extends TestCase
         $this->table = new Table();
     }
 
-    public function getModelisNullTest()
+    public function getModelisNullTest(): void
     {
         $this->assertNull( 
             $this->table->getModel(), 
@@ -28,7 +28,7 @@ final class TableTest extends TestCase
         ); 
     }
 
-    public function getModelisNotNullTest()
+    public function getModelisNotNullTest(): void
     {
 		$model = new UserModel();
         $this->table->setModel($model);
