@@ -30,4 +30,37 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('false',  $this->configuration->getAutoWidth());
     }
 
+    public function testSetDeferRender(): void
+    {
+        $this->assertSame('false',  $this->configuration->getDeferRender());
+
+        $this->configuration->setDeferRender(true);
+        $this->assertSame('true',  $this->configuration->getDeferRender());
+
+        $this->configuration->setDeferRender(false);
+        $this->assertSame('false',  $this->configuration->getDeferRender());
+    }
+
+    public function testSetInfo(): void
+    {
+        $this->assertSame('false',  $this->configuration->getInfo());
+
+        $this->configuration->setInfo(true);
+        $this->assertSame('true',  $this->configuration->getInfo());
+
+        $this->configuration->setInfo(false);
+        $this->assertSame('false',  $this->configuration->getInfo());
+    }
+
+    public function testSetOrdering(): void
+    {
+        $this->assertSame('false',  $this->configuration->getOrdering());
+
+        $this->configuration->setOrdering(true);
+        $this->assertSame('true',  $this->configuration->getOrdering());
+
+        $this->configuration->setOrdering(false);
+        $this->assertSame('false',  $this->configuration->getOrdering());
+    }
+
 }
