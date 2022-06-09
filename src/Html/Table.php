@@ -22,12 +22,12 @@ class Table
     // region Properties
 
     /**
-     * @var
+     * The model
      */
     protected $model;
 
     /**
-     * @var
+     * The configuration
      */
     protected $configuration;
 
@@ -37,6 +37,7 @@ class Table
 
     /**
      * Table constructor.
+     * @return Table
      */
     public function __construct(?Model $model = null)
     {
