@@ -13,7 +13,6 @@ namespace atsanna\DataTables\Config;
 
 use atsanna\DataTables\DataTables;
 use CodeIgniter\Config\BaseService;
-use Config\Services as AppServices;
 
 /**
  * Services Configuration file.

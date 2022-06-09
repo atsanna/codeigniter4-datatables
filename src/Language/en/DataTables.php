@@ -10,8 +10,8 @@
  */
 
 return [
-    'add'            => 'Add',
-    'delete'         => 'Delete',
-    'edit'           => 'Edit',
+    'add'    => 'Add',
+    'delete' => 'Delete',
+    'edit'   => 'Edit',
 
 ];

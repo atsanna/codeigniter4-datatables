@@ -2,10 +2,10 @@
 
 namespace Tests\Html;
 
-use \CodeIgniter\Shield\Models\UserModel;
-use \atsanna\DataTables\Html\Table;
-use \atsanna\DataTables\Settings\Configuration;
-use \Tests\Support\TestCase;
+use atsanna\DataTables\Html\Table;
+use atsanna\DataTables\Settings\Configuration;
+use CodeIgniter\Shield\Models\UserModel;
+use Tests\Support\TestCase;
 
 /**
  * @internal
@@ -19,7 +19,7 @@ final class TableTest extends TestCase
     {
         parent::setUp();
 
-        $this->table = new Table();
+        $this->table              = new Table();
         $this->tableConfiguration = $this->table->getConfiguration();
     }
 
@@ -27,28 +27,25 @@ final class TableTest extends TestCase
     {
         $tableModel = $this->table->getModel() ?? null;
 
-        $this->assertNull( 
-            $tableModel, 
-            "model is null or not"
-        ); 
+        $this->assertNull(
+            $tableModel,
+            'model is null or not'
+        );
     }
 
     public function testGetModelInstanceOf(): void
     {
-		$model = new UserModel();
+        $model = new UserModel();
         $this->table->setModel($model);
 
         $tableModel = $this->table->getModel() ?? null;
 
         $this->assertInstanceOf(UserModel::class, $tableModel);
-
     }
 
     public function testGetConfigurationInstanceOf(): void
     {
-
         $this->assertInstanceOf(Configuration::class, $this->table->getConfiguration());
-
     }
 
     /*public function testFetch_data(): void
@@ -59,6 +56,4 @@ final class TableTest extends TestCase
         $this->assertIsArray($this->table->fetch_data());
 
     }*/
-
-    
 }

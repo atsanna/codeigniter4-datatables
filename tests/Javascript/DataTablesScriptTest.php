@@ -2,8 +2,8 @@
 
 namespace Tests\Html;
 
-use \atsanna\DataTables\Javascript\DataTablesScript;
-use \Tests\Support\TestCase;
+use atsanna\DataTables\Javascript\DataTablesScript;
+use Tests\Support\TestCase;
 
 /**
  * @internal
@@ -19,14 +19,8 @@ final class DataTablesScriptTest extends TestCase
         $this->dataTablesScript = new DataTablesScript();
     }
 
-
     public function testGetJavascript(): void
     {
-
         $this->assertStringContainsString('script', $this->dataTablesScript->getJavascript());
-
     }
-
-    
-
 }

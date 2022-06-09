@@ -16,237 +16,207 @@ use CodeIgniter\Model;
 
 /**
  * Class Table
- *
- * @package atsanna\DataTables\Html
  */
 class Table
 {
+    // region Properties
 
-	// region Properties
+    /**
+     * @var
+     */
+    protected $model;
 
-		/**
-		 * @var
-		 */
-		protected $model;
+    /**
+     * @var
+     */
+    protected $configuration;
 
-		/**
-		 * @var
-		 */
-		protected $configuration;
+    // endregion
 
-	// endregion
+    // region Constructor
 
-	// region Constructor
+    /**
+     * Table constructor.
+     */
+    public function __construct(?Model $model = null)
+    {
+        // Assign the Model
+        if ($model !== null) {
+            $this->setModel($model);
+        }
 
-		/**
-		 * Table constructor.
-		 *
-		 * @param Model|null $model
-		 */
-		public function __construct( Model $model = null)
-		{
-			// Assign the Model
-			if($model !==null)
-			{
-				$this->setModel($model);
-			}
+        // Configure DataTables
+        $this->setConfiguration(new Configuration());
 
-			// Configure DataTables
-			$this->setConfiguration( new Configuration() );
+        return $this;
+    }
 
-			return $this;
-		}
+    // endregion
 
-	// endregion
+    // region Setters
 
-	// region Setters
+    public function setModel(Model $model): Table
+    {
+        $this->model = $model;
 
-		/**
-		 * @param Model $model
-		 * @return Table
-		 */
-		public function setModel(Model $model): Table
-		{
-			$this->model = $model;
+        return $this;
+    }
 
-			return $this;
-		}
+    public function setConfiguration(Configuration $configuration): Table
+    {
+        $this->configuration = $configuration;
 
-		/**
-		 * @param Configuration $configuration
-		 * @return Table
-		 */
-		public function setConfiguration(Configuration $configuration): Table
-		{
-			$this->configuration = $configuration;
+        return $this;
+    }
 
-			return $this;
-		}
+    // endregion
 
+    // region Getters
 
-	// endregion
+    /**
+     * @return Model
+     */
+    public function getModel(): ?Model
+    {
+        return $this->model;
+    }
 
-	// region Getters
+    public function getConfiguration(): Configuration
+    {
+        return $this->configuration;
+    }
 
-		/**
-		 * @return Model
-		 */
-		public function getModel(): ?Model
-		{
-			return $this->model;
-		}
+    // endregion
 
-		/**
-		 * @return Configuration
-		 */
-		public function getConfiguration(): Configuration
-		{
-			return $this->configuration;
-		}
+    // region Private Methods
 
+    private function getFieldsFromModel(): array
+    {
+        $fields = [];
 
-	// endregion
+        foreach ($this->getModel()->allowedFields as $field) {
+            $fields[] = $field;
+        }
 
-	// region Private Methods
+        return $fields;
+    }
 
-		/**
-		 * @return array
-		 */
-		private function getFieldsFromModel(): array
-		{
-			$fields= array();
-			foreach ($this->getModel()->allowedFields as $field){
-				$fields[]=$field;
-			}
-			return $fields;
-		}
+    /**
+     * @return array[]
+     */
+    private function getTableData(): array
+    {
+        return [
+            [
+                'fields'          => $this->getFieldsFromModel(),
+                'localize'        => 'User',
+                'class'           => 'table table-bordered table-hover table-striped',
+                'style'           => '',
+                'id'              => $this->getModel()->table . '_' . time(),
+                'data-id'         => '',
+                'data-table_name' => $this->getModel()->table,
+                'data-footer'     => true,
+            ],
+        ];
+    }
 
-		/**
-		 * @return array[]
-		 */
-		private function getTableData(): array
-		{
-			$data= [
-				[
-					'fields' => $this->getFieldsFromModel(),
-					'localize' => 'User',
-					'class' => 'table table-bordered table-hover table-striped',
-					'style' => '',
-					'id' => $this->getModel()->table . "_" . time(),
-					'data-id' => '',
-					'data-table_name' => $this->getModel()->table,
-					'data-footer' => true
-				]
-			];
+    /**
+     * Generate thead content from array of fields
+     *
+     * @param $fields 			The array of fields
+     * @param false $localize The name of File for the localization
+     */
+    private function getTableHeader($fields = [], $localize = false): string
+    {
+        $head = '';
 
-			return $data;
-		}
+        foreach ($fields as $field) {
+            if ($localize !== false) {
+                $field = lang($localize . '.' . $field);
+            }
+            $head .= '<th>' . $field . '</th>';
+        }
 
-		/**
-		 * Generate thead content from array of fields
-		 *
-		 * @param $fields 			The array of fields
-		 * @param false $localize	The name of File for the localization
-		 * @return string
-		 */
-		private function getTableHeader($fields = array(), $localize = false): string
-		{
+        return '<tr>' . $head . '</tr>';
+    }
 
-			$head = '';
-			foreach ($fields as $field) {
-				if($localize !== false){
-					$field = lang($localize . "." . $field);
-				}
-				$head .= "<th>" . $field . "</th>";
-			}
-			return "<tr>" . $head . "</tr>";
-		}
+    // endregion
 
-	// endregion
+    // region Public Methods
 
-	// region Public Methods
+    /**
+     * Generate table content
+     */
+    public function render(?array $data = null): string
+    {
+        $param = '';
+        if (isset($data['id'])) {
+            $param .= ' id="' . $data['id'] . '"';
+        }
+        if (isset($data['data-id'])) {
+            $param .= ' data-id="' . $data['data-id'] . '"';
+        }
+        if (isset($data['data-table_name'])) {
+            $param .= ' data-table_name="' . $data['data-table_name'] . '"';
+        }
+        if (isset($data['class'])) {
+            $param .= ' class="' . $data['class'] . '"';
+        }
+        if (isset($data['style'])) {
+            $param .= ' style="' . $data['style'] . '"';
+        }
 
-		/**
-		 * Generate table content
-		 *
-		 * @param array|null $data
-		 * @return string
-		 */
-		public function render(array $data = null ): string
-		{
+        $localize = false;
+        if (isset($data['localize'])) {
+            $localize = $data['localize'];
+        }
 
-			$param = '';
-			if(isset($data['id'])){
-				$param .= ' id="' . $data['id'] . '"';
-			}
-			if(isset($data['data-id'])){
-				$param .= ' data-id="' . $data['data-id'] . '"';
-			}
-			if(isset($data['data-table_name'])){
-				$param .= ' data-table_name="' . $data['data-table_name'] . '"';
-			}
-			if(isset($data['class'])){
-				$param .= ' class="' . $data['class'] . '"';
-			}
-			if(isset($data['style'])){
-				$param .= ' style="' . $data['style'] . '"';
-			}
+        $foot = '';
+        if (isset($data['footer'])) {
+            $footer = $data['footer'];
+            if ($footer) {
+                $foot = $this->getTableHeader($data['fields'], $localize);
+            }
+        }
 
-			$localize= false;
-			if(isset($data['localize'])){
-				$localize = $data['localize'];
-			}
+        $table = '';
+        if (isset($data['fields']) && is_array($data['fields'])) {
+            $head  = $this->getTableHeader($data['fields'], $localize);
+            $table = '<table ' . $param . '><thead>' . $head . '</thead><tbody></tbody><tfoot>' . $foot . '</tfoot></table>';
+        }
 
-			$foot = '';
-			if(isset($data['footer'])){
-				$footer = $data['footer'];
-				if($footer)
-				{
-					$foot = $this->getTableHeader($data['fields'], $localize);
-				}
-			}
+        return $table;
+    }
 
-			$table='';
-			if(isset($data['fields']) && is_array($data['fields']))
-			{
-				$head = $this->getTableHeader($data['fields'], $localize);
-				$table = "<table " . $param . "><thead>" . $head . "</thead><tbody></tbody><tfoot>" . $foot . "</tfoot></table>";
-			}
+    // endregion
 
-			return $table;
-		}
+    // region CRUD
 
-	// endregion
+    public function fetch_data(): array
+    {
+        $fields = '';
 
+        for ($x = 0; $x < count($this->getModel()->allowedFields); $x++) {
+            $fields .= $this->getModel()->allowedFields[$x] . ', ';
+        }
 
-	// region CRUD
+        return $this->getModel()->select(substr($fields, 0, strlen($fields) - 1))->findAll();
+    }
 
-	public function fetch_data(): array
-	{
-		$fields = "";
-		for ($x=0; $x< count($this->getModel()->allowedFields); $x++){
-			$fields .= $this->getModel()->allowedFields[$x] .", ";
-		}
+    public function insert()
+    {
+        dd('insert');
+    }
 
-		return $this->getModel()->select(substr($fields, 0, strlen($fields)-1) )->findAll();
-	}
+    public function update()
+    {
+        dd('update');
+    }
 
-	public function insert()
-	{
-		dd('insert');
-	}
+    public function delete()
+    {
+        dd('delete');
+    }
 
-	public function update()
-	{
-		dd('update');
-	}
-
-	public function delete()
-	{
-		dd('delete');
-	}
-
-	// endregion
-
-
+    // endregion
 }

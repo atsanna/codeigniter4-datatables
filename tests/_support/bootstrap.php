@@ -37,7 +37,7 @@ defined('PUBLICPATH') || define('PUBLICPATH', realpath($source . 'public') . DIR
 unset($source);
 
 // Load framework paths from their config file
-require  'tests/_support/Config/Paths.php';
+require 'tests/_support/Config/Paths.php';
 $paths = new Paths();
 
 // Define necessary framework path constants
@@ -51,7 +51,7 @@ defined('TESTPATH')      || define('TESTPATH', realpath(HOMEPATH . 'tests/') . D
 defined('SUPPORTPATH')   || define('SUPPORTPATH', realpath(TESTPATH . '_support/') . DIRECTORY_SEPARATOR);
 defined('COMPOSER_PATH') || define('COMPOSER_PATH', realpath(HOMEPATH . 'vendor/autoload.php'));
 defined('VENDORPATH')    || define('VENDORPATH', realpath(HOMEPATH . 'vendor') . DIRECTORY_SEPARATOR);
-defined('ADMIN_AREA') || define('ADMIN_AREA', 'admin');
+defined('ADMIN_AREA')    || define('ADMIN_AREA', 'admin');
 
 // Load Common.php from App then System
 if (file_exists(APPPATH . 'Common.php')) {
@@ -83,11 +83,11 @@ if (! class_exists('CodeIgniter\Services', false)) {
 }
 
 // Initialize and register the loader with the SPL autoloader stack.
-require_once SYSTEMPATH .'Helpers/filesystem_helper.php';
+require_once SYSTEMPATH . 'Helpers/filesystem_helper.php';
 $autoloader = Services::autoloader();
 $autoloader->initialize(new Autoload(), new Modules())->register();
 $autoloader->addNamespace('App', APPPATH);
-$autoloader->addNamespace('Config', APPPATH.'Config');
+$autoloader->addNamespace('Config', APPPATH . 'Config');
 
 // Ensure Bonfire namespaces are added early enough that the tests are aware
 $registrar = new Bonfire\Config\Registrar();

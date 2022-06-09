@@ -13,175 +13,151 @@ namespace atsanna\DataTables\Settings;
 
 /**
  * Class Column
- *
- * @package atsanna\DataTables\Settings
  */
 class Column
 {
+    // region Properties
 
-	// region Properties
+    /**
+     * @var string
+     */
+    protected $searchable = 'false';
 
-		/**
-		 * @var string
-		 */
-		protected $searchable = 'false';
+    /**
+     * Set a descriptive name for a column
+     *
+     * @var string
+     */
+    protected $name = '';
 
-		/**
-		 * Set a descriptive name for a column
-		 *
-		 * @var string
-		 */
-		protected $name = '';
+    /**
+     * Set the column title
+     *
+     * @var string
+     */
+    protected $title = '';
 
-		/**
-		 * Set the column title
-		 * @var string
-		 */
-		protected $title = '';
+    /**
+     * Enable or disable the display of this column
+     *
+     * @var string
+     */
+    protected $visible = 'true';
 
-		/**
-		 * Enable or disable the display of this column
-		 * @var string
-		 */
-		protected $visible =  'true';
+    /**
+     * Render (process) the data for use in the table
+     *
+     * @var string
+     */
+    protected $render = '';
 
-		/**
-		 * Render (process) the data for use in the table
-		 *
-		 * @var string
-		 */
-		protected $render = '';
+    // endregion
 
-	// endregion
+    // region Constructor
 
-	// region Constructor
+    /**
+     * Column constructor.
+     */
+    public function __construct(?array $config = null)
+    {
+        if (isset($config['name'])) {
+            $this->setName($config['name']);
+        }
 
-		/**
-		 * Column constructor.
-		 */
-		public function __construct( array $config = null)
-		{
-			if(isset($config['name']))
-			{
-				$this->setName($config['name']);
-			}
+        if (isset($config['searchable'])) {
+            $this->setSearchable($config['searchable']);
+        }
 
-			if(isset($config['searchable']))
-			{
-				$this->setSearchable($config['searchable']);
-			}
+        if (isset($config['visible'])) {
+            $this->setVisible($config['visible']);
+        }
 
-			if(isset($config['visible']))
-			{
-				$this->setVisible($config['visible']);
-			}
+        if (isset($config['title'])) {
+            $this->setTitle($config['title']);
+        }
 
-			if(isset($config['title']))
-			{
-				$this->setTitle($config['title']);
-			}
+        return $this;
+    }
 
-			return $this;
-		}
+    // endregion
 
-	// endregion
+    // region Setters
 
-	// region Setters
+    /**
+     * @param string $searchable
+     */
+    public function setSearchable(bool $searchable): Column
+    {
+        $this->searchable = $searchable ? 'true' : 'false';
 
-		/**
-		 * @param string $searchable
-		 */
-		public function setSearchable(bool $searchable): Column
-		{
-			$this->searchable = $searchable ? 'true' : 'false';
+        return $this;
+    }
 
-			return $this;
-		}
+    /**
+     * @param string $fieldName
+     */
+    public function setName(string $name): Column
+    {
+        $this->name = $name;
 
-		/**
-		 * @param string $fieldName
-		 */
-		public function setName(string $name): Column
-		{
-			$this->name = $name;
+        return $this;
+    }
 
-			return $this;
-		}
+    public function setTitle(string $title): Column
+    {
+        $this->title = $title;
 
-		/**
-		 * @param string $title
-		 */
-		public function setTitle(string $title): Column
-		{
-			$this->title = $title;
+        return $this;
+    }
 
-			return $this;
-		}
+    /**
+     * @param string $visible
+     */
+    public function setVisible(bool $visible): Column
+    {
+        $this->visible = $visible ? 'true' : 'false';
 
-		/**
-		 * @param string $visible
-		 */
-		public function setVisible(bool $visible): Column
-		{
-			$this->visible = $visible ? 'true' : 'false';
+        return $this;
+    }
 
-			return $this;
-		}
+    public function setRender(string $render): Column
+    {
+        $this->render = $render;
 
-		/**
-		 * @param string $render
-		 */
-		public function setRender(string $render): Column
-		{
-			$this->render = $render;
+        return $this;
+    }
 
-			return $this;
-		}
+    // endregion
 
-	// endregion
+    // region Getters
 
-	// region Getters
+    /**
+     * @return Column
+     */
+    public function getSearchable(): string
+    {
+        return $this->searchable;
+    }
 
-		/**
-		 * @return Column
-		 */
-		public function getSearchable(): string
-		{
-			return $this->searchable;
-		}
+    public function getName(): string
+    {
+        return $this->name;
+    }
 
-		/**
-		 * @return string
-		 */
-		public function getName(): string
-		{
-			return $this->name;
-		}
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
 
-		/**
-		 * @return string
-		 */
-		public function getTitle(): string
-		{
-			return $this->title;
-		}
+    public function getVisible(): string
+    {
+        return $this->visible;
+    }
 
-		/**
-		 * @return string
-		 */
-		public function getVisible(): string
-		{
-			return $this->visible;
-		}
+    public function getRender(): string
+    {
+        return $this->render;
+    }
 
-		/**
-		 * @return string
-		 */
-		public function getRender(): string
-		{
-			return $this->render;
-		}
-
-	// endregion
-
+    // endregion
 }

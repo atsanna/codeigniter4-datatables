@@ -18,7 +18,7 @@
 		"php": "^7.4 || ^8.0",
 		"ext-json": "*",
 		"codeigniter4/framework": "^4.2",
-        "codeigniter4/shield": "dev-develop",
+		"codeigniter4/shield": "dev-develop",
 		"components/font-awesome": "^6.1",
 		"league/commonmark": "^2.0",
 		"roave/security-advisories": "dev-latest",
@@ -50,6 +50,13 @@
 			"Tests\\": "tests",
 			"Tests\\Support\\": "tests/_support"
 		}
+	},
+	"scripts": {
+		"analyze": "phpstan analyze",
+		"deduplicate": "phpcpd src/",
+		"inspect": "deptrac analyze --cache-file=build/deptrac.cache",
+		"style": "php-cs-fixer fix --verbose --ansi --using-cache=no",
+		"test": "phpunit"
 	},
 	"funding": [
         {
