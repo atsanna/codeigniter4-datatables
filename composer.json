@@ -36,7 +36,8 @@
 		"psr/container": "^2.0",
 		"qossmic/deptrac-shim": "^0.21.0",
 		"vimeo/psalm": "^4.23",
-		"symfony/filesystem": "^5.4"
+		"symfony/filesystem": "^5.4",
+		"rector/rector": "^0.13.5"
 	},
 	"suggest": {
 		"ext-fileinfo": "Improves mime type detection for files"
@@ -55,12 +56,16 @@
 			"Tests\\Support\\": "tests/_support"
 		}
 	},
-	"scripts": {
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
 		"analyze": "phpstan analyze",
 		"ci": [
 			"Composer\\Config::disableProcessTimeout",
 			"@deduplicate",
-            "@sa",
 			"@analyze",
 			"@test",
 			"@inspect",
@@ -69,10 +74,6 @@
         "cs-fix": "@style",
 		"deduplicate": "phpcpd src/",
 		"inspect": "deptrac analyze --cache-file=build/deptrac.cache",
-		"sa": [
-            "phpstan analyze",
-            "psalm"
-        ],
 		"style": "php-cs-fixer fix --verbose --ansi --using-cache=no",
 		"test": "phpunit"
 	},

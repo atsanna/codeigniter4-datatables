@@ -213,17 +213,17 @@ class Table
 
     public function insert()
     {
-        dd('insert');
+        echo 'insert';
     }
 
     public function update()
     {
-        dd('update');
+        echo 'update';
     }
 
     public function delete()
     {
-        dd('delete');
+        echo 'delete';
     }
 
     // endregion
