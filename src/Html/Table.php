@@ -37,6 +37,7 @@ class Table
 
     /**
      * Table constructor.
+     *
      * @return Table
      */
     public function __construct(?Model $model = null)
