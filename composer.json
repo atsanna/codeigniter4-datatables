@@ -1,7 +1,7 @@
 {
 	"name": "atsanna/codeigniter4-datatables",
 	"type": "project",
-	"description": "DataTables support for CodeIgniter 4",
+	"description": "DataTables support for CodeIgniter 4.2.x",
 	"homepage": "https://github.com/atsanna/codeigniter4-datatables",
 	"license": "MIT",
 	"authors": [
@@ -54,10 +54,21 @@
 	},
 	"scripts": {
 		"analyze": "phpstan analyze",
+		"ci": [
+			"Composer\\Config::disableProcessTimeout",
+			"@deduplicate",
+			"@analyze",
+			"@test",
+			"@inspect",
+			"@style"
+		],
 		"deduplicate": "phpcpd src/",
 		"inspect": "deptrac analyze --cache-file=build/deptrac.cache",
 		"style": "php-cs-fixer fix --verbose --ansi --using-cache=no",
 		"test": "phpunit"
+	},
+	"support": {
+		"forum": "http://forum.codeigniter.com/"
 	},
 	"funding": [
         {

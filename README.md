@@ -20,18 +20,6 @@ It is possible to define a model to be passed as a dependency in the constructor
     $table 	= new \atsanna\DataTables\Html\Table( $userModel );
 ```
 
-It is possible to customize the rendering:
-```php
-    $data = [
-        'id'        => $userModel->table,
-        'class'     => 'table table-striped table-bordered',
-        'style'     => 'width: 100%; margin-left: auto; margin-right: auto;',
-        'fields'    => $userModel->allowedFields,
-    ];
-    
-    echo $table->render($data);
-```
-
 There are many configuration possibilities:
 
 - Enable or disable automatic calculation of column width
@@ -61,4 +49,16 @@ The default configuration can be customized as follows:
             ->setLengthMenu('[[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]]')
             ->setAutoWidth(false)
             ->setScrollX(true);
+```
+
+It is possible to customize the rendering:
+```php
+    $data = [
+        'id'        => $userModel->table,
+        'class'     => 'table table-striped table-bordered',
+        'style'     => 'width: 100%; margin-left: auto; margin-right: auto;',
+        'fields'    => $userModel->allowedFields,
+    ];
+    
+    echo $table->render($data);
 ```
