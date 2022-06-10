@@ -22,3 +22,5 @@ parameters:
 		- APP_NAMESPACE
 		- CI_DEBUG
 		- ENVIRONMENT
+	treatPhpDocTypesAsCertain: false
+	reportUnmatchedIgnoredErrors: false

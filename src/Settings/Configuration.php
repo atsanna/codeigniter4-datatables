@@ -205,7 +205,6 @@ class Configuration
      * Ajax sourced data with client-side processing
      * Ajax sourced data with server-side processing
      *
-     * @var
      */
     protected $dataSource;
 
@@ -218,7 +217,7 @@ class Configuration
      */
     public function __construct()
     {
-        return $this;
+        
     }
 
     // endregion
@@ -383,11 +382,7 @@ class Configuration
         return $this;
     }
 
-    /**
-     * @param $dataset
-     *
-     * @return $this
-     */
+
     public function setDataSource($dataset): Configuration
     {
         $this->dataSource = $dataset;

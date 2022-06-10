@@ -50,7 +50,7 @@ class Table
         // Configure DataTables
         $this->setConfiguration(new Configuration());
 
-        return $this;
+        //return $this;
     }
 
     // endregion
@@ -95,7 +95,7 @@ class Table
     private function getFieldsFromModel(): array
     {
         $fields = [];
-
+        /** @phpstan-ignore-next-line */
         foreach ($this->getModel()->allowedFields as $field) {
             $fields[] = $field;
         }
@@ -106,6 +106,7 @@ class Table
     /**
      * @return array[]
      */
+    /** @phpstan-ignore-next-line */
     private function getTableData(): array
     {
         return [
@@ -114,8 +115,10 @@ class Table
                 'localize'        => 'User',
                 'class'           => 'table table-bordered table-hover table-striped',
                 'style'           => '',
+                /** @phpstan-ignore-next-line */
                 'id'              => $this->getModel()->table . '_' . time(),
                 'data-id'         => '',
+                /** @phpstan-ignore-next-line */
                 'data-table_name' => $this->getModel()->table,
                 'data-footer'     => true,
             ],
@@ -125,8 +128,8 @@ class Table
     /**
      * Generate thead content from array of fields
      *
-     * @param $fields 			The array of fields
-     * @param false $localize The name of File for the localization
+     * @param array $fields 			The array of fields
+     * @param bool $localize The name of File for the localization
      */
     private function getTableHeader($fields = [], $localize = false): string
     {
@@ -197,8 +200,9 @@ class Table
     public function fetch_data(): array
     {
         $fields = '';
-
+        /** @phpstan-ignore-next-line */
         for ($x = 0; $x < count($this->getModel()->allowedFields); $x++) {
+            /** @phpstan-ignore-next-line */
             $fields .= $this->getModel()->allowedFields[$x] . ', ';
         }
 

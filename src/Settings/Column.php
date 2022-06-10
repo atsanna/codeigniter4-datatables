@@ -76,7 +76,6 @@ class Column
             $this->setTitle($config['title']);
         }
 
-        return $this;
     }
 
     // endregion
@@ -84,7 +83,7 @@ class Column
     // region Setters
 
     /**
-     * @param string $searchable
+     * @param bool $searchable
      */
     public function setSearchable(bool $searchable): Column
     {
@@ -94,7 +93,7 @@ class Column
     }
 
     /**
-     * @param string $fieldName
+     * @param string $name
      */
     public function setName(string $name): Column
     {
@@ -111,7 +110,7 @@ class Column
     }
 
     /**
-     * @param string $visible
+     * @param bool $visible
      */
     public function setVisible(bool $visible): Column
     {
@@ -132,7 +131,7 @@ class Column
     // region Getters
 
     /**
-     * @return Column
+     * @return string
      */
     public function getSearchable(): string
     {
