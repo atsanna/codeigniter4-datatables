@@ -75,16 +75,12 @@ class Column
         if (isset($config['title'])) {
             $this->setTitle($config['title']);
         }
-
     }
 
     // endregion
 
     // region Setters
 
-    /**
-     * @param bool $searchable
-     */
     public function setSearchable(bool $searchable): Column
     {
         $this->searchable = $searchable ? 'true' : 'false';
@@ -92,9 +88,6 @@ class Column
         return $this;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): Column
     {
         $this->name = $name;
@@ -109,9 +102,6 @@ class Column
         return $this;
     }
 
-    /**
-     * @param bool $visible
-     */
     public function setVisible(bool $visible): Column
     {
         $this->visible = $visible ? 'true' : 'false';
@@ -130,9 +120,6 @@ class Column
 
     // region Getters
 
-    /**
-     * @return string
-     */
     public function getSearchable(): string
     {
         return $this->searchable;

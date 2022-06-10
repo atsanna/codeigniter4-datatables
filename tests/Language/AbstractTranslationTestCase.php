@@ -45,7 +45,7 @@ abstract class AbstractTranslationTestCase extends TestCase
      * @var array<string, string>
      */
     public static array $locales = [
-        ArabicTranslationTest::class             => 'ar',
+        ArabicTranslationTest::class => 'ar',
         //        BosnianTranslationTest::class            => 'bs',
         //        CzechTranslationTest::class              => 'cs',
         //        GermanTranslationTest::class             => 'de',
@@ -54,7 +54,7 @@ abstract class AbstractTranslationTestCase extends TestCase
         //        FrenchTranslationTest::class             => 'fr',
         //        HungarianTranslationTest::class          => 'hu',
         //        IndonesianTranslationTest::class         => 'id',
-        ItalianTranslationTest::class            => 'it',
+        ItalianTranslationTest::class  => 'it',
         JapaneseTranslationTest::class => 'ja',
         //        KoreanTranslationTest::class             => 'ko',
         //        LithuanianTranslationTest::class         => 'lt',

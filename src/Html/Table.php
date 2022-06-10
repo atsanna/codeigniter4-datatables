@@ -50,7 +50,7 @@ class Table
         // Configure DataTables
         $this->setConfiguration(new Configuration());
 
-        //return $this;
+        // return $this;
     }
 
     // endregion
@@ -106,18 +106,20 @@ class Table
     /**
      * @return array[]
      */
-    /** @phpstan-ignore-next-line */
+    /**
+     * @phpstan-ignore-next-line
+     */
     private function getTableData(): array
     {
         return [
             [
-                'fields'          => $this->getFieldsFromModel(),
-                'localize'        => 'User',
-                'class'           => 'table table-bordered table-hover table-striped',
-                'style'           => '',
+                'fields'   => $this->getFieldsFromModel(),
+                'localize' => 'User',
+                'class'    => 'table table-bordered table-hover table-striped',
+                'style'    => '',
                 /** @phpstan-ignore-next-line */
-                'id'              => $this->getModel()->table . '_' . time(),
-                'data-id'         => '',
+                'id'      => $this->getModel()->table . '_' . time(),
+                'data-id' => '',
                 /** @phpstan-ignore-next-line */
                 'data-table_name' => $this->getModel()->table,
                 'data-footer'     => true,
@@ -128,8 +130,8 @@ class Table
     /**
      * Generate thead content from array of fields
      *
-     * @param array $fields 			The array of fields
-     * @param bool $localize The name of File for the localization
+     * @param array $fields   The array of fields
+     * @param bool  $localize The name of File for the localization
      */
     private function getTableHeader($fields = [], $localize = false): string
     {

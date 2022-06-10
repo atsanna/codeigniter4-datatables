@@ -90,8 +90,6 @@ class DataTablesScript
      * Minimize javascript code
      * https://datayze.com/howto/minify-javascript-with-php
      *
-     * @param string $javascript
-     *
      * @return string|string[]|null
      */
     public function minimizeJavascript(string $javascript)
@@ -109,9 +107,6 @@ class DataTablesScript
     /**
      * Generate $(document).ready(function(){} block and include javascript code
      * to draggable form modal
-     *
-     * @param string $id
-     * @param Configuration $configuration
      */
     public function getDocumentReady(string $id, Configuration $configuration): string
     {

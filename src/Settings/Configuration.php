@@ -204,7 +204,6 @@ class Configuration
      * Javascript (array / objects)
      * Ajax sourced data with client-side processing
      * Ajax sourced data with server-side processing
-     *
      */
     protected $dataSource;
 
@@ -217,7 +216,6 @@ class Configuration
      */
     public function __construct()
     {
-        
     }
 
     // endregion
@@ -381,7 +379,6 @@ class Configuration
 
         return $this;
     }
-
 
     public function setDataSource($dataset): Configuration
     {
