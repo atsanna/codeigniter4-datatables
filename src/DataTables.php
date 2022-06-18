@@ -27,7 +27,7 @@ class DataTables
     {
         $this->_dataTablesScript = $dt = service('dataTablesScript');
         $this->_table            = service('table');
-        
+
         $this->_table->setModel($model);
 
         return $this;
