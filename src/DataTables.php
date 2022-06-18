@@ -13,8 +13,6 @@ namespace atsanna\DataTables;
 
 include_once __DIR__ . '/Config/Constants.php';
 
-use atsanna\DataTables\Html\Table;
-use atsanna\DataTables\Javascript\DataTablesScript;
 use CodeIgniter\Model;
 
 class DataTables
@@ -27,8 +25,10 @@ class DataTables
      */
     public function boot(?Model $model = null): DataTables
     {
-        $this->_dataTablesScript = new DataTablesScript();
-        $this->_table            = new Table($model);
+        $this->_dataTablesScript = $dt = service('dataTablesScript');
+        $this->_table            = service('table');
+        
+        $this->_table->setModel($model);
 
         return $this;
     }
