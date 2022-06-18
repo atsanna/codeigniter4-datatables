@@ -12,6 +12,8 @@
 namespace atsanna\DataTables\Config;
 
 use atsanna\DataTables\DataTables;
+use atsanna\DataTables\Html\Table;
+use atsanna\DataTables\Javascript\DataTablesScript;
 use CodeIgniter\Config\BaseService;
 
 /**
@@ -41,5 +43,29 @@ class Services extends BaseService
         }
 
         return new DataTables();
+    }
+
+    /**
+     * @return DataTablesScript|mixed
+     */
+    public static function dataTablesScript(bool $getShared = true)
+    {
+        if ($getShared) {
+            return static::getSharedInstance('dataTablesScript');
+        }
+
+        return new DataTablesScript();
+    }
+
+    /**
+     * @return mixed|Table
+     */
+    public static function table(bool $getShared = true)
+    {
+        if ($getShared) {
+            return static::getSharedInstance('table');
+        }
+
+        return new Table();
     }
 }
