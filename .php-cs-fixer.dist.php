@@ -30,17 +30,17 @@ $finder = Finder::create()
         __DIR__ . '/spark',
     ]);
 
-    $overrides = [
-        'ordered_class_elements' => [
-            'order' => [
-                'use_trait',
-                'constant',
-                'property',
-                'method',
-            ],
-            'sort_algorithm' => 'none',
+$overrides = [
+    'ordered_class_elements' => [
+        'order' => [
+            'use_trait',
+            'constant',
+            'property',
+            'method',
         ],
-    ];
+        'sort_algorithm' => 'none',
+    ],
+];
 
 $options = [
     'finder'       => $finder,
