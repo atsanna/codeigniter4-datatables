@@ -15,7 +15,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
-		"php": "^7.4 || ^8.0",
+		"php": "^7.4 || ^8.0 || ^8.1",
 		"ext-json": "*",
 		"codeigniter4/framework": "^4.2",
 		"codeigniter4/shield": "dev-develop",
