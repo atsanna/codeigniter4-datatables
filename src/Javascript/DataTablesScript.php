@@ -100,7 +100,7 @@ class DataTablesScript
         $javascript = preg_replace("/\\s*\n\\s*/", "\n", $javascript); // spaces around newlines
         $javascript = preg_replace('/\\h+/', ' ', $javascript); // \h+ horizontal white space
         // remove unnecessary horizontal spaces around non variables (alphanumerics, underscore, dollar sign)
-        //$javascript = preg_replace("/\h([^A-Za-z0-9\_\$])/", '$1', $javascript); //Causa problemi con le icone nella tabella dei menu
+        // $javascript = preg_replace("/\h([^A-Za-z0-9\_\$])/", '$1', $javascript); //Causa problemi con le icone nella tabella dei menu
         return preg_replace('/([^A-Za-z0-9\\_$])\\h/', '$1', $javascript);
     }
 
@@ -125,7 +125,7 @@ class DataTablesScript
 				';
 
         if ($configuration->getServerSide() === 'true') {
-            //$result .= "'ajax': '" 	. $ajax->getDataSource() . "',";
+            // $result .= "'ajax': '" 	. $ajax->getDataSource() . "',";
             $result .= "
 				'ajax':{
 					url: '" . $configuration->getDataSource() . "',
@@ -194,7 +194,7 @@ class DataTablesScript
      */
     public function getJavascript($script = ''): string
     {
-        //$javascript = $this->minimizeJavascript( $this->getDocumentReady($script) );
+        // $javascript = $this->minimizeJavascript( $this->getDocumentReady($script) );
         $javascript_custom = $this->minimizeJavascript($script);
 
         return '<script>' . $javascript_custom . '</script>';
