@@ -12,8 +12,8 @@ use Tests\Support\TestCase;
  */
 final class TableTest extends TestCase
 {
-    protected $table;
-    protected $tableConfiguration;
+    protected Table $table;
+    protected Configuration $tableConfiguration;
 
     protected function setUp(): void
     {
@@ -23,7 +23,7 @@ final class TableTest extends TestCase
         $this->tableConfiguration = $this->table->getConfiguration();
     }
 
-    public function testGetModelisNull(): void
+    public function testGetModelIsNull(): void
     {
         $tableModel = $this->table->getModel() ?? null;
 
@@ -48,12 +48,48 @@ final class TableTest extends TestCase
         $this->assertInstanceOf(Configuration::class, $this->table->getConfiguration());
     }
 
-    /*public function testFetch_data(): void
+    public function testRenderString(): void
     {
+        $model = new UserModel();
+        $this->table->setModel($model);
 
-        $this->table->setModel(new UserModel());
+        $data = [
+            'fields'          => $this->table->getModel()->__get('allowedFields'),
+            'localize'        => 'User',
+            'class'           => 'table table-bordered table-hover table-striped',
+            'style'           => '',
+            'id'              => $this->table->getModel()->__get('table') . '_' . time(),
+            'data-id'         => '',
+            'data-table_name' => $this->table->getModel()->__get('table'),
+            'footer'          => true,
+        ];
 
-        $this->assertIsArray($this->table->fetch_data());
+        $this->assertIsString(
+            $this->table->render($data),
+            'return is string'
+        );
+    }
 
-    }*/
+    /* public function testFetch_data(): void
+     {
+         $model = new UserModel();
+         $this->table->setModel($model);
+
+         $this->assertIsArray($this->table->fetch_data());
+     }*/
+
+    /* public function testInsert(): void
+     {
+         $this->assertStringContainsString('insert', $this->table->insert());
+     }
+
+     public function testUpdate(): void
+     {
+         $this->assertStringContainsString('update', $this->table->update());
+     }
+
+     public function testDelete(): void
+     {
+         $this->assertStringContainsString('delete', $this->table->delete());
+     }*/
 }

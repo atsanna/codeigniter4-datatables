@@ -23,7 +23,7 @@ class DataTablesScript
      *
      * @var string[]
      */
-    protected $css = [
+    protected array $css = [
         '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.css',
         '//cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css',
         '//cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css',
@@ -34,7 +34,7 @@ class DataTablesScript
      *
      * @var string[]
      */
-    protected $javascript = [
+    protected array $javascript = [
         '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js',
         '//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js',
         '//cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js',
@@ -51,17 +51,17 @@ class DataTablesScript
      */
     public function getExternalLibraries(array $css = [], array $javascript = [], array $replace = ['css' => false, 'js' => false])
     {
-        if (isset($replace['css']) && $replace['css']) {
+        if (isset($replace['css']) && $replace['css'] === true) {
             $this->css = $css;
-        } elseif (isset($replace['css']) && ! $replace['css']) {
+        } elseif (isset($replace['css']) && $replace['css'] === false) {
             $this->css = array_merge($this->css, $css);
         } else {
             $this->css = [];
         }
 
-        if (isset($replace['js']) && $replace['js']) {
+        if (isset($replace['js']) && $replace['js'] === true) {
             $this->javascript = $javascript;
-        } elseif (isset($replace['js']) && ! $replace['js']) {
+        } elseif (isset($replace['js']) && $replace['js'] === false) {
             $this->javascript = array_merge($this->javascript, $javascript);
         } else {
             $this->javascript = [];
@@ -99,6 +99,7 @@ class DataTablesScript
         // condense spaces
         $javascript = preg_replace("/\\s*\n\\s*/", "\n", $javascript); // spaces around newlines
         $javascript = preg_replace('/\\h+/', ' ', $javascript); // \h+ horizontal white space
+
         // remove unnecessary horizontal spaces around non variables (alphanumerics, underscore, dollar sign)
         // $javascript = preg_replace("/\h([^A-Za-z0-9\_\$])/", '$1', $javascript); //Causa problemi con le icone nella tabella dei menu
         return preg_replace('/([^A-Za-z0-9\\_$])\\h/', '$1', $javascript);
@@ -189,10 +190,7 @@ class DataTablesScript
 		';
     }
 
-    /**
-     * @param string $script
-     */
-    public function getJavascript($script = ''): string
+    public function getJavascript(string $script = ''): string
     {
         // $javascript = $this->minimizeJavascript( $this->getDocumentReady($script) );
         $javascript_custom = $this->minimizeJavascript($script);

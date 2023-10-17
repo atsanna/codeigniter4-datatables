@@ -17,8 +17,8 @@ use CodeIgniter\Model;
 
 class DataTables
 {
-    protected $_table;
-    protected $_dataTablesScript;
+    protected object $_table;
+    protected object $_dataTablesScript;
 
     /**
      * Sets up initialize module and return this object.
@@ -28,25 +28,27 @@ class DataTables
         $this->_dataTablesScript = $dt = service('dataTablesScript');
         $this->_table            = service('table');
 
-        $this->_table->setModel($model);
+        if ($model !== null) {
+            $this->_table->setModel($model);
+        }
 
         return $this;
     }
 
     // Return Table Object
-    public function table()
+    public function table(): object
     {
         return $this->_table;
     }
 
     // Return DataTablesScript Object
-    public function dataTablesScript()
+    public function dataTablesScript(): object
     {
         return $this->_dataTablesScript;
     }
 
     // Return DataTables Version
-    public function getVersion()
+    public function getVersion(): string
     {
         return DATATABLES_VERSION;
     }

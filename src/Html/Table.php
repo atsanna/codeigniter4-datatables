@@ -24,12 +24,12 @@ class Table
     /**
      * The model
      */
-    protected $model;
+    protected ?Model $model = null;
 
     /**
      * The configuration
      */
-    protected $configuration;
+    protected Configuration $configuration;
 
     // endregion
 
@@ -38,7 +38,7 @@ class Table
     /**
      * Table constructor.
      *
-     * @return Table
+     * @return void
      */
     public function __construct(?Model $model = null)
     {
@@ -75,9 +75,6 @@ class Table
 
     // region Getters
 
-    /**
-     * @return Model
-     */
     public function getModel(): ?Model
     {
         return $this->model;
@@ -95,8 +92,8 @@ class Table
     private function getFieldsFromModel(): array
     {
         $fields = [];
-        /** @phpstan-ignore-next-line */
-        foreach ($this->getModel()->allowedFields as $field) {
+
+        foreach ($this->getModel()->__get('allowedFields') as $field) {
             $fields[] = $field;
         }
 
@@ -113,15 +110,13 @@ class Table
     {
         return [
             [
-                'fields'   => $this->getFieldsFromModel(),
-                'localize' => 'User',
-                'class'    => 'table table-bordered table-hover table-striped',
-                'style'    => '',
-                /** @phpstan-ignore-next-line */
-                'id'      => $this->getModel()->table . '_' . time(),
-                'data-id' => '',
-                /** @phpstan-ignore-next-line */
-                'data-table_name' => $this->getModel()->table,
+                'fields'          => $this->getFieldsFromModel(),
+                'localize'        => 'User',
+                'class'           => 'table table-bordered table-hover table-striped',
+                'style'           => '',
+                'id'              => $this->getModel()->__get('table') . '_' . time(),
+                'data-id'         => '',
+                'data-table_name' => $this->getModel()->__get('table'),
                 'data-footer'     => true,
             ],
         ];
@@ -133,7 +128,7 @@ class Table
      * @param array $fields   The array of fields
      * @param bool  $localize The name of File for the localization
      */
-    private function getTableHeader($fields = [], $localize = false): string
+    private function getTableHeader(array $fields = [], bool $localize = false): string
     {
         $head = '';
 
@@ -199,32 +194,51 @@ class Table
 
     // region CRUD
 
-    public function fetch_data(): array
-    {
-        $fields = '';
-        /** @phpstan-ignore-next-line */
-        for ($x = 0; $x < count($this->getModel()->allowedFields); $x++) {
-            /** @phpstan-ignore-next-line */
-            $fields .= $this->getModel()->allowedFields[$x] . ', ';
-        }
+    /**
+     * Fetches all results
+     */
+    /*  public function fetch_data(): array
+      {
+          $query  = null;
+          $limit  = 0;
+          $offset = 0;
 
-        return $this->getModel()->select(substr($fields, 0, strlen($fields) - 1))->findAll();
-    }
+          if ($_POST && $_POST !== []) {
+              if (isset($_POST['query'])) {
+                  $query = $_POST['query'];
+                  // Join,Where,Subquery,ecc...
+              }
+              if (isset($_POST['limit'])) {
+                  $limit = $_POST['limit'];
+              }
+              if (isset($_POST['offset'])) {
+                  $offset = $_POST['offset'];
+              }
+          }
 
-    public function insert()
-    {
-        echo 'insert';
-    }
+          $fields = '';
 
-    public function update()
-    {
-        echo 'update';
-    }
+          for ($x = 0; $x < count($this->getModel()->__get('allowedFields')); $x++) {
+              $fields .= $this->getModel()->__get('allowedFields')[$x] . ', ';
+          }
 
-    public function delete()
-    {
-        echo 'delete';
-    }
+          return $this->getModel()->select(substr($fields, 0, strlen($fields) - 1))->findAll($limit, $offset);
+      }
+
+      public function insert(): string
+      {
+          return 'insert';
+      }
+
+      public function update(): string
+      {
+          return 'update';
+      }
+
+      public function delete(): string
+      {
+          return 'delete';
+      }*/
 
     // endregion
 }
