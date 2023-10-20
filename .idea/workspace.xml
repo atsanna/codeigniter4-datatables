@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new test">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/coveralls.yml" afterDir="false" />
-    </list>
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +255,7 @@
       <workItem from="1697529193225" duration="3159000" />
       <workItem from="1697534918243" duration="1231000" />
       <workItem from="1697813889219" duration="128000" />
-      <workItem from="1697814024180" duration="5103000" />
+      <workItem from="1697814024180" duration="5451000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -355,7 +353,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697819168196</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add new test">
+      <option name="closed" value="true" />
+      <created>1697819722181</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697819722181</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add new test">
+      <option name="closed" value="true" />
+      <created>1697819781508</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697819781508</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
