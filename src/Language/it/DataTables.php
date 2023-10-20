@@ -13,5 +13,4 @@ return [
     'add'    => 'Inserisci',
     'delete' => 'Elimina',
     'edit'   => 'Modifica',
-
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Html;
+namespace Tests\Settings;
 
 use atsanna\DataTables\Settings\Configuration;
 use Tests\Support\TestCase;
@@ -10,7 +10,7 @@ use Tests\Support\TestCase;
  */
 final class ConfigurationTest extends TestCase
 {
-    protected $configuration;
+    protected Configuration $configuration;
 
     protected function setUp(): void
     {
@@ -138,7 +138,7 @@ final class ConfigurationTest extends TestCase
         $this->assertSame('false', $this->configuration->getScrollCollapse());
     }
 
-    public function testsetSearching(): void
+    public function testSetSearching(): void
     {
         $this->assertSame('true', $this->configuration->getSearching());
 

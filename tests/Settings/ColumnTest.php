@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Html;
+namespace Tests\Settings;
 
 use atsanna\DataTables\Settings\Column;
 use Tests\Support\TestCase;
@@ -10,7 +10,7 @@ use Tests\Support\TestCase;
  */
 final class ColumnTest extends TestCase
 {
-    protected $column;
+    protected Column $column;
 
     protected function setUp(): void
     {
