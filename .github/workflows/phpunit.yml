@@ -75,7 +75,7 @@ jobs:
           php-coveralls --verbose --coverage_clover=build/phpunit/clover.xml --json_path build/phpunit/coveralls-upload.json
         env:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
           COVERALLS_PARALLEL: true
           COVERALLS_FLAG_NAME: PHP ${{ matrix.php-versions }}
 
