@@ -16,7 +16,12 @@ final class ColumnTest extends TestCase
     {
         parent::setUp();
 
-        $this->column = new Column();
+        $config['name']       = 'name';
+        $config['searchable'] = 'true';
+        $config['visible']    = 'true';
+        $config['title']      = 'title';
+
+        $this->column         = new Column($config);
     }
 
     public function testSetSearchable(): void

@@ -3,6 +3,7 @@
 namespace Tests;
 
 use atsanna\DataTables\DataTables;
+use CodeIgniter\Shield\Models\UserModel;
 use Tests\Support\TestCase;
 
 /**
@@ -20,9 +21,15 @@ final class DataTablesTest extends TestCase
         $this->dataTables->boot();
     }
 
-    public function testBoot(): void
+    public function testBoot1(): void
     {
         $this->assertIsObject($this->dataTables->boot());
+    }
+
+    public function testBoot2(): void
+    {
+        $model = new UserModel();
+        $this->assertIsObject($this->dataTables->boot($model));
     }
 
     public function testTable(): void
