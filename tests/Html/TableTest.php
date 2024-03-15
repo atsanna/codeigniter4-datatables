@@ -70,6 +70,17 @@ final class TableTest extends TestCase
         );
     }
 
+    public function testGetTableData(): void
+    {
+        $model = new UserModel();
+        $this->table->setModel($model);
+
+        $this->assertIsArray(
+            $this->table->getTableData(),
+            'assert variable is array or not'
+        );
+    }
+
     /* public function testFetch_data(): void
      {
          $model = new UserModel();

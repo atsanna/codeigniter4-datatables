@@ -106,7 +106,7 @@ class Table
     /**
      * @phpstan-ignore-next-line
      */
-    private function getTableData(): array
+    public function getTableData(): array
     {
         return [
             [
