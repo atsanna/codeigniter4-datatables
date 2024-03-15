@@ -21,7 +21,7 @@ class DataTablesScript
     /**
      * The list of css libraries
      *
-     * @var string[]
+     * @var list<string>
      */
     protected array $css = [
         '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.css',
@@ -32,7 +32,7 @@ class DataTablesScript
     /**
      * The list of default Javascript libraries
      *
-     * @var string[]
+     * @var list<string>
      */
     protected array $javascript = [
         '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js',
@@ -45,9 +45,9 @@ class DataTablesScript
     /**
      * Return list of libraries
      *
-     * @param array   $css        Other css libraries to merge
-     * @param array   $javascript Other javascript library to merge
-     * @param false[] $replace    Decide if you wont merge or replace the css or javascript libraries
+     * @param array       $css        Other css libraries to merge
+     * @param array       $javascript Other javascript library to merge
+     * @param list<false> $replace    Decide if you wont merge or replace the css or javascript libraries
      */
     public function getExternalLibraries(array $css = [], array $javascript = [], array $replace = ['css' => false, 'js' => false])
     {
@@ -90,7 +90,7 @@ class DataTablesScript
      * Minimize javascript code
      * https://datayze.com/howto/minify-javascript-with-php
      *
-     * @return string|string[]|null
+     * @return list<string>|string|null
      */
     public function minimizeJavascript(string $javascript)
     {

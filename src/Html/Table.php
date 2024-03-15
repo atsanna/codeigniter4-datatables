@@ -101,7 +101,7 @@ class Table
     }
 
     /**
-     * @return array[]
+     * @return list<array>
      */
     /**
      * @phpstan-ignore-next-line

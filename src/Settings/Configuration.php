@@ -347,7 +347,7 @@ class Configuration
      */
     public function setColumns(array $columns): Configuration
     {
-        if (count(array_filter($columns, fn ($entry) => ! ($entry instanceof Column))) > 0) {
+        if (count(array_filter($columns, static fn ($entry) => ! ($entry instanceof Column))) > 0) {
             throw new DomainException('an array of Column must be provided');
         }
 

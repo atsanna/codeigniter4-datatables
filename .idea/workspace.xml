@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new test" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new test">
+      <change beforePath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Settings/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings/Configuration.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,16 +25,16 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <interpreter name="registry.iotservices.it/atsanna/phpdocker:8.1" composer="composer" />
+      <interpreter name="registry.iotservices.it/atsanna/phpdocker:8.1.27-apache" composer="composer" />
     </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -50,7 +57,7 @@
     <option name="selectedConfigurationId" value="DEFAULT_INTERPRETER" />
   </component>
   <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="registry.iotservices.it/atsanna/phpdocker:8.1">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="registry.iotservices.it/atsanna/phpdocker:8.1.27-apache">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
@@ -131,7 +138,6 @@
       <path value="$PROJECT_DIR$/vendor/codeigniter/coding-standard" />
       <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/kint-php/kint" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/codeigniter4/settings" />
       <path value="$PROJECT_DIR$/vendor/qossmic/deptrac-shim" />
@@ -140,6 +146,9 @@
       <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/vendor/sebastian/phpcpd" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -151,19 +160,21 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Composer Script.Ci.executor&quot;: &quot;Run&quot;,
+    &quot;Composer Script.cs-fix.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker&quot;,
     &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/phpunit/phpunit/phpunit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/autoload.php&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.php.quality.tools.php.code.sniffer&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -219,13 +230,20 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Composer Script.cs-fix" />
         <item itemvalue="Composer Script.test" />
         <item itemvalue="Composer Script.analyze" />
         <item itemvalue="Composer Script.deduplicate" />
         <item itemvalue="Composer Script.style" />
-        <item itemvalue="Composer Script.cs-fix" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -255,7 +273,17 @@
       <workItem from="1697529193225" duration="3159000" />
       <workItem from="1697534918243" duration="1231000" />
       <workItem from="1697813889219" duration="128000" />
-      <workItem from="1697814024180" duration="5451000" />
+      <workItem from="1697814024180" duration="6272000" />
+      <workItem from="1698927663136" duration="343000" />
+      <workItem from="1703531361368" duration="286000" />
+      <workItem from="1703546285196" duration="492000" />
+      <workItem from="1703573162712" duration="143000" />
+      <workItem from="1704110145518" duration="372000" />
+      <workItem from="1704206413513" duration="341000" />
+      <workItem from="1704208640454" duration="8000" />
+      <workItem from="1704268242308" duration="2325000" />
+      <workItem from="1704625401398" duration="64000" />
+      <workItem from="1706288826153" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -369,7 +397,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697819781508</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add new test">
+      <option name="closed" value="true" />
+      <created>1697819813946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697819813946</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add new test">
+      <option name="closed" value="true" />
+      <created>1697819919950</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697819919950</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add new test">
+      <option name="closed" value="true" />
+      <created>1697820002748</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697820002748</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

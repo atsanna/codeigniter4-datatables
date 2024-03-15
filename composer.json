@@ -15,10 +15,10 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
-		"php": "^7.4 || ^8.0 || ^8.1 || ^8.2",
+		"php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3",
 		"ext-json": "*",
-		"codeigniter4/framework": "^4.2",
-		"codeigniter4/shield": "dev-develop",
+		"codeigniter4/framework": "^4.4",
+		"codeigniter4/shield": "^1.0",
         "codeigniter4/settings": "^2.0",
 		"components/font-awesome": "^6.2",
 		"league/commonmark": "^2.0",
@@ -79,7 +79,7 @@
 		"test": "XDEBUG_MODE=coverage phpunit"
 	},
 	"support": {
-		"forum": "http://forum.codeigniter.com/"
+		"forum": "https://forum.codeigniter.com/"
 	},
 	"funding": [
         {
