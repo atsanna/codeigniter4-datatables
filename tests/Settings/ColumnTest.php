@@ -17,16 +17,16 @@ final class ColumnTest extends TestCase
         parent::setUp();
 
         $config['name']       = 'name';
-        $config['searchable'] = 'true';
-        $config['visible']    = 'true';
+        $config['searchable'] = true;
+        $config['visible']    = true;
         $config['title']      = 'title';
 
-        $this->column         = new Column($config);
+        $this->column = new Column($config);
     }
 
     public function testSetSearchable(): void
     {
-        $this->assertSame('false', $this->column->getSearchable());
+        $this->assertSame('true', $this->column->getSearchable());
 
         $this->column->setSearchable(true);
         $this->assertSame('true', $this->column->getSearchable());
@@ -37,7 +37,7 @@ final class ColumnTest extends TestCase
 
     public function testSetName(): void
     {
-        $this->assertSame('', $this->column->getName());
+        $this->assertSame('name', $this->column->getName());
 
         $this->column->setName('Test');
         $this->assertSame('Test', $this->column->getName());
@@ -45,7 +45,7 @@ final class ColumnTest extends TestCase
 
     public function testSetTitle(): void
     {
-        $this->assertSame('', $this->column->getTitle());
+        $this->assertSame('title', $this->column->getTitle());
 
         $this->column->setTitle('Test');
         $this->assertSame('Test', $this->column->getTitle());
