@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new test">
       <change beforePath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Settings/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Javascript/DataTablesScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Javascript/DataTablesScript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Language/AbstractTranslationTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Language/AbstractTranslationTestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,6 @@
       <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
       <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
-      <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
@@ -142,9 +139,10 @@
       <path value="$PROJECT_DIR$/vendor/codeigniter4/settings" />
       <path value="$PROJECT_DIR$/vendor/qossmic/deptrac-shim" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
       <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/vendor/sebastian/phpcpd" />
+      <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
