@@ -46,4 +46,35 @@ final class DataTablesScriptTest extends TestCase
         $this->configuration->setServerSide(false);
         $this->assertStringContainsString('var', $this->dataTablesScript->getDocumentReady('test', $this->configuration));
     }
+
+    public function testGetExternalLibraries1(): void
+    {
+        $this->dataTablesScript = new DataTablesScript();
+
+        $css        = [];
+        $javascript = [];
+
+        $replace = ['css' => false, 'js' => false];
+        ob_start();
+        $this->dataTablesScript->getExternalLibraries($css, $javascript, $replace);
+        $response = ob_get_contents();
+        ob_end_clean();
+        echo $response;
+        $this->expectOutputString($response);
+    }
+
+    public function testGetExternalLibraries2(): void
+    {
+        $this->dataTablesScript = new DataTablesScript();
+
+        $css        = ['test.js'];
+        $javascript = ['test.css'];
+        $replace    = ['css' => true, 'js' => true];
+        ob_start();
+        $this->dataTablesScript->getExternalLibraries($css, $javascript, $replace);
+        $response = ob_get_contents();
+        ob_end_clean();
+        echo $response;
+        $this->expectOutputString($response);
+    }
 }

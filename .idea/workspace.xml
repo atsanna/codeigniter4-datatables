@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Remove .idea folder">
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="phive add new trust-gpg-keys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Javascript/DataTablesScriptTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Javascript/DataTablesScriptTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,26 +154,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Composer Script.Ci.executor": "Run",
-    "Composer Script.cs-fix.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/autoload.php",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.scopes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Composer Script.Ci.executor&quot;: &quot;Run&quot;,
+    &quot;Composer Script.cs-fix.executor&quot;: &quot;Run&quot;,
+    &quot;Composer Script.inspect.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/autoload.php&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -200,9 +202,9 @@
       <option name="script" value="deduplicate" />
       <method v="2" />
     </configuration>
-    <configuration name="style" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
+    <configuration name="inspect" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <option name="script" value="style" />
+      <option name="script" value="inspect" />
       <method v="2" />
     </configuration>
     <configuration name="test" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
@@ -216,27 +218,27 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
+      <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.cs-fix" />
       <item itemvalue="Composer Script.deduplicate" />
-      <item itemvalue="Composer Script.style" />
       <item itemvalue="Composer Script.test" />
       <item itemvalue="PHPUnit.phpunit.xml.dist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Composer Script.inspect" />
         <item itemvalue="Composer Script.cs-fix" />
         <item itemvalue="Composer Script.test" />
         <item itemvalue="Composer Script.analyze" />
         <item itemvalue="Composer Script.deduplicate" />
-        <item itemvalue="Composer Script.style" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14808.18" />
       </set>
     </attachedChunks>
   </component>
@@ -279,6 +281,7 @@
       <workItem from="1704268242308" duration="2325000" />
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
+      <workItem from="1710505463170" duration="1724000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -448,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710499266001</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="phive add new trust-gpg-keys">
+      <option name="closed" value="true" />
+      <created>1710499951354</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1710499951354</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +509,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add new test" />
     <MESSAGE value="Remove .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove .idea folder" />
+    <MESSAGE value="phive add new trust-gpg-keys" />
+    <option name="LAST_COMMIT_MESSAGE" value="phive add new trust-gpg-keys" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
