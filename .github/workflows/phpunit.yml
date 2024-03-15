@@ -79,7 +79,7 @@ jobs:
           COVERALLS_FLAG_NAME: PHP ${{ matrix.php-versions }}
 
   coveralls:
-    needs: [main]
+    needs: main
     name: Coveralls Finished
     runs-on: ubuntu-latest
     steps:
