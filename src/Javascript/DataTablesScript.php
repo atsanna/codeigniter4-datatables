@@ -45,9 +45,9 @@ class DataTablesScript
     /**
      * Return list of libraries
      *
-     * @param array       $css        Other css libraries to merge
-     * @param array       $javascript Other javascript library to merge
-     * @param list<false> $replace    Decide if you wont merge or replace the css or javascript libraries
+     * @param array $css        Other css libraries to merge
+     * @param array $javascript Other javascript library to merge
+     * @param array $replace    Decide if you wont merge or replace the css or javascript libraries
      */
     public function getExternalLibraries(array $css = [], array $javascript = [], array $replace = ['css' => false, 'js' => false])
     {

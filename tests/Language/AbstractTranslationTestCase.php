@@ -300,7 +300,7 @@ abstract class AbstractTranslationTestCase extends TestCase
     }
 
     /**
-     * @return list<list<string>>
+     * @return array<string, array<int, string|null>>
      */
     final public static function localesProvider(): iterable
     {
