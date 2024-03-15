@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add new tests" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix tests">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,7 +280,7 @@
       <workItem from="1704268242308" duration="2325000" />
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
-      <workItem from="1710505463170" duration="3502000" />
+      <workItem from="1710505463170" duration="3936000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -480,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710509275506</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fix tests">
+      <option name="closed" value="true" />
+      <created>1710509545748</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710509545748</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +542,8 @@
     <MESSAGE value="Remove .idea folder" />
     <MESSAGE value="phive add new trust-gpg-keys" />
     <MESSAGE value="Add new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new tests" />
+    <MESSAGE value="Fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
