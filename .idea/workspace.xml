@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix tests">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix coverage badge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,10 +215,10 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
-      <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.cs-fix" />
       <item itemvalue="Composer Script.deduplicate" />
+      <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.test" />
       <item itemvalue="PHPUnit.phpunit.xml.dist" />
     </list>
@@ -280,7 +278,7 @@
       <workItem from="1704268242308" duration="2325000" />
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
-      <workItem from="1710505463170" duration="3936000" />
+      <workItem from="1710505463170" duration="4621000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -490,7 +488,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710509545748</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix coverage badge">
+      <option name="closed" value="true" />
+      <created>1710509777402</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710509777402</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +549,8 @@
     <MESSAGE value="phive add new trust-gpg-keys" />
     <MESSAGE value="Add new tests" />
     <MESSAGE value="Fix tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
+    <MESSAGE value="Fix coverage badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix coverage badge" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
