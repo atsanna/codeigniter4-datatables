@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix coverage badge" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix coverage badge">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +140,91 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/phpcpd" />
       <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
       <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
+      <path value="$PROJECT_DIR$/build/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/build/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/build/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/build/vendor/league/config" />
+      <path value="$PROJECT_DIR$/build/vendor/mikey179/vfsstream" />
+      <path value="$PROJECT_DIR$/build/vendor/rector/rector" />
+      <path value="$PROJECT_DIR$/build/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/build/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/build/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/build/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/build/vendor/spatie/commonmark-highlighter" />
+      <path value="$PROJECT_DIR$/build/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/build/vendor/codeigniter4/shield" />
+      <path value="$PROJECT_DIR$/build/vendor/codeigniter4/framework" />
+      <path value="$PROJECT_DIR$/build/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/build/vendor/codeigniter4/settings" />
+      <path value="$PROJECT_DIR$/build/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/build/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/build/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/build/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/build/vendor/qossmic/deptrac-shim" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/build/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/build/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/build/vendor/laminas/laminas-escaper" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/build/vendor/components/font-awesome" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/build/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/build/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/build/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/build/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/build/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/build/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/build/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/build/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/build/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/build/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/build/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/build/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/build/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/build/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/build/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/build/vendor/nexusphp/cs-config" />
+      <path value="$PROJECT_DIR$/build/vendor/nexusphp/tachycardia" />
+      <path value="$PROJECT_DIR$/build/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/build/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/build/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/build/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/build/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/build/vendor/composer" />
+      <path value="$PROJECT_DIR$/build/vendor/codeigniter/coding-standard" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -151,33 +238,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Composer Script.Ci.executor&quot;: &quot;Run&quot;,
-    &quot;Composer Script.cs-fix.executor&quot;: &quot;Run&quot;,
-    &quot;Composer Script.inspect.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker&quot;,
-    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/autoload.php&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Composer Script.Ci.executor": "Run",
+    "Composer Script.ci.executor": "Run",
+    "Composer Script.cs-fix.executor": "Run",
+    "Composer Script.inspect.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/mnt/F24AE3254AE2E4F7/Lavori/codeigniter4-datatables/vendor/autoload.php",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.scopes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Composer Script.Ci">
+  <component name="RunManager" selected="Composer Script.ci">
     <configuration name="Ci" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="commandLineParameters" value="" />
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
@@ -189,14 +277,14 @@
       <option name="script" value="analyze" />
       <method v="2" />
     </configuration>
+    <configuration name="ci" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/build/composer.json" />
+      <option name="script" value="ci" />
+      <method v="2" />
+    </configuration>
     <configuration name="cs-fix" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <option name="script" value="cs-fix" />
-      <method v="2" />
-    </configuration>
-    <configuration name="deduplicate" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <option name="script" value="deduplicate" />
       <method v="2" />
     </configuration>
     <configuration name="inspect" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
@@ -215,20 +303,20 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
+      <item itemvalue="Composer Script.ci" />
       <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.cs-fix" />
-      <item itemvalue="Composer Script.deduplicate" />
       <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.test" />
       <item itemvalue="PHPUnit.phpunit.xml.dist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Composer Script.ci" />
         <item itemvalue="Composer Script.inspect" />
         <item itemvalue="Composer Script.cs-fix" />
         <item itemvalue="Composer Script.test" />
         <item itemvalue="Composer Script.analyze" />
-        <item itemvalue="Composer Script.deduplicate" />
       </list>
     </recent_temporary>
   </component>
