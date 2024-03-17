@@ -1,73 +1,80 @@
+# When a PR is opened or a push is made, perform an
+# architectural inspection on the code using Deptrac.
 name: Deptrac
 
 on:
   pull_request:
     branches:
-      - main
+      - 'develop'
+      - '4.*'
     paths:
-      - '**.php'
-      - 'composer.*'
+      - 'app/**.php'
+      - 'system/**.php'
+      - 'composer.json'
       - 'depfile.yaml'
-      - '.github/workflows/deptrac.yml'
+      - '.github/workflows/test-deptrac.yml'
   push:
     branches:
-      - main
+      - 'develop'
+      - '4.*'
     paths:
-      - '**.php'
-      - 'composer.*'
+      - 'app/**.php'
+      - 'system/**.php'
+      - 'composer.json'
       - 'depfile.yaml'
-      - '.github/workflows/deptrac.yml'
+      - '.github/workflows/test-deptrac.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   build:
-    name: Dependency Tracing
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
-
+    name: Architectural Inspection
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up PHP
+      - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          tools: phive
-          extensions: intl, json, mbstring, xml
-          coverage: none
-        env:
-          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tools: composer
+          extensions: intl, json, mbstring, gd, mysqlnd, xdebug, xml, sqlite3
+
+      - name: Validate composer.json
+        run: composer validate --strict
 
       - name: Get composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+        run: echo "COMPOSER_CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_ENV
 
-      - name: Cache composer dependencies
-        uses: actions/cache@v3
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
+          path: ${{ env.COMPOSER_CACHE_FILES_DIR }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Create Deptrac cache directory
         run: mkdir -p build/
 
       - name: Cache Deptrac results
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: build
           key: ${{ runner.os }}-deptrac-${{ github.sha }}
           restore-keys: ${{ runner.os }}-deptrac-
 
       - name: Install dependencies
-        run: |
-          if [ -f composer.lock ]; then
-            composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
-          else
-            composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader
-          fi
+        run: composer update --ansi --no-interaction
 
-      - name: Trace dependencies
+      - name: Run architectural inspection
         run: |
-          sudo phive --no-progress install --global --trust-gpg-keys B8F640134AB1782E,A98E898BB53EB748,47436587D82C4A39 qossmic/deptrac
-          deptrac analyze --cache-file=build/deptrac.cache
+          composer require --dev qossmic/deptrac-shim
+          vendor/bin/deptrac analyze --cache-file=build/deptrac.cache
+        env:
+          GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

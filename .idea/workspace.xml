@@ -265,7 +265,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Composer Script.ci">
+  <component name="RunManager" selected="Composer Script.Ci">
     <configuration name="Ci" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="commandLineParameters" value="" />
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
