@@ -14,16 +14,16 @@ This class allows to obtain a table formatted in html.
 It is possible to define a model to be passed as a dependency in the constructor; this model will be used for the management of columns and queries.
 
 ```php
-    $userModel = new \atsanna\Models\UserModel();
-    $table 	= new \atsanna\DataTables\Html\Table( $userModel );
+    $userModel  = new \atsanna\Models\UserModel();
+    $table      = new \atsanna\DataTables\Html\Table( $userModel );
 ```
 
 
 The model can be associated or replaced using the method `setModel()`
 
 ```php
-    $table 	= new \atsanna\DataTables\Html\Table();
-    $userModel = new \atsanna\Models\UserModel();
+    $table 	    = new \atsanna\DataTables\Html\Table();
+    $userModel  = new \atsanna\Models\UserModel();
     $table->setModel($userModel);
 ```
 

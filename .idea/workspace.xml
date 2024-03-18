@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add javascript section on the documentation" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add javascript section on the documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/table.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/html/table.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -372,7 +375,7 @@
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
       <workItem from="1710744628855" duration="6480000" />
-      <workItem from="1710768066076" duration="397000" />
+      <workItem from="1710768066076" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -686,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710768265018</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add javascript section on the documentation">
+      <option name="closed" value="true" />
+      <created>1710768607944</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1710768607944</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
