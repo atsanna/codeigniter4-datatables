@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add assets for documentation">
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add link for the documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/getting_started/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/install.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -373,7 +374,7 @@
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
-      <workItem from="1710744628855" duration="3440000" />
+      <workItem from="1710744628855" duration="3744000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -631,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710747392118</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add link for the documentation">
+      <option name="closed" value="true" />
+      <created>1710748372747</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1710748372747</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +697,8 @@
     <MESSAGE value="Try to fix deptrac" />
     <MESSAGE value="Initial documentation" />
     <MESSAGE value="Add assets for documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add assets for documentation" />
+    <MESSAGE value="Add link for the documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add link for the documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
