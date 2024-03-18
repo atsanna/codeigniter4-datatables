@@ -1,3 +1,5 @@
+# When a PR is opened or a push is made, perform an
+# architectural inspection on the code using Deptrac.
 name: Deptrac
 
 on:
@@ -26,26 +28,25 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
-          tools: phive
+          php-version: '8.2'
+          tools: composer
           extensions: intl, json, mbstring, xml
           coverage: none
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+        run: echo "COMPOSER_CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_ENV
 
       - name: Cache composer dependencies
         uses: actions/cache@v3
         with:
-          path: ${{ steps.composer-cache.outputs.dir }}
+          path: ${{ env.COMPOSER_CACHE_FILES_DIR }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
 
@@ -59,15 +60,19 @@ jobs:
           key: ${{ runner.os }}-deptrac-${{ github.sha }}
           restore-keys: ${{ runner.os }}-deptrac-
 
-      - name: Install dependencies
-        run: |
-          if [ -f composer.lock ]; then
-            composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
-          else
-            composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader
-          fi
+      - name: Install dependencies (limited)
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name }}
+        run: composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Install dependencies (authenticated)
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name }}
+        run: composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
+        env:
+          COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
 
       - name: Trace dependencies
         run: |
-          sudo phive --no-progress install --global --trust-gpg-keys B8F640134AB1782E,A98E898BB53EB748,47436587D82C4A39 qossmic/deptrac
-          deptrac analyze --cache-file=build/deptrac.cache
+          composer require --dev qossmic/deptrac-shim
+          vendor/bin/deptrac analyze --cache-file=build/deptrac.cach
+        env:
+          GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

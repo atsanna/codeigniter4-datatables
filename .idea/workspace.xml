@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Fix coverage badge">
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Try to fix deptrac">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -303,8 +303,8 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
-      <item itemvalue="Composer Script.ci" />
       <item itemvalue="Composer Script.analyze" />
+      <item itemvalue="Composer Script.ci" />
       <item itemvalue="Composer Script.cs-fix" />
       <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.test" />
@@ -584,7 +584,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710509777402</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Try to fix deptrac">
+      <option name="closed" value="true" />
+      <created>1710669587712</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710669587712</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +646,8 @@
     <MESSAGE value="Add new tests" />
     <MESSAGE value="Fix tests" />
     <MESSAGE value="Fix coverage badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix coverage badge" />
+    <MESSAGE value="Try to fix deptrac" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to fix deptrac" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
