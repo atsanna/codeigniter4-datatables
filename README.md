@@ -62,3 +62,8 @@ It is possible to customize the rendering:
 
     echo $table->render($data);
 ```
+
+## See the documentation
+
+[Documentation](https://atsanna.github.io/codeigniter4-datatables/)
+

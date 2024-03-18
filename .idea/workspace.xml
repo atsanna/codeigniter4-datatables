@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Initial documentation">
-      <change afterPath="$PROJECT_DIR$/admin/how_to_build_docs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/css/codeigniter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/css/codeigniter_dark_mode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/flame.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/js/curl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/js/hljs.js" afterDir="false" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add assets for documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/install.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,7 +373,7 @@
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
-      <workItem from="1710744628855" duration="2376000" />
+      <workItem from="1710744628855" duration="3440000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -629,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710746195213</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add assets for documentation">
+      <option name="closed" value="true" />
+      <created>1710747392118</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1710747392118</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +687,8 @@
     <MESSAGE value="Fix coverage badge" />
     <MESSAGE value="Try to fix deptrac" />
     <MESSAGE value="Initial documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial documentation" />
+    <MESSAGE value="Add assets for documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add assets for documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
