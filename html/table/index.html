@@ -638,11 +638,11 @@
 <pre class="highlight"><code class="language-php">    $table  = new \atsanna\DataTables\Html\Table();</code></pre>
 <h2 id="association-of-a-model-to-the-table">Association of a Model to the table</h2>
 <p>It is possible to define a model to be passed as a dependency in the constructor; this model will be used for the management of columns and queries.</p>
-<pre class="highlight"><code class="language-php">    $userModel = new \atsanna\Models\UserModel();
-    $table  = new \atsanna\DataTables\Html\Table( $userModel );</code></pre>
+<pre class="highlight"><code class="language-php">    $userModel  = new \atsanna\Models\UserModel();
+    $table      = new \atsanna\DataTables\Html\Table( $userModel );</code></pre>
 <p>The model can be associated or replaced using the method <code>setModel()</code></p>
-<pre class="highlight"><code class="language-php">    $table  = new \atsanna\DataTables\Html\Table();
-    $userModel = new \atsanna\Models\UserModel();
+<pre class="highlight"><code class="language-php">    $table      = new \atsanna\DataTables\Html\Table();
+    $userModel  = new \atsanna\Models\UserModel();
     $table-&gt;setModel($userModel);</code></pre>
 <p>To retrieve and use the associated model, use the method <code>getModel()</code></p>
 <pre class="highlight"><code class="language-php">    $model = $table-&gt;getModel();</code></pre>
