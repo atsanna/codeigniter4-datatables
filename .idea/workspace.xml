@@ -303,8 +303,8 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
-      <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.ci" />
+      <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.cs-fix" />
       <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.test" />
