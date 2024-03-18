@@ -42,7 +42,7 @@ extra:
 
   social:
     - icon: material/github
-      link: https://github.com/codeigniter4/shield
+      link: https://github.com/atsanna/codeigniter4-datatables
       name: GitHub
     - icon: material/twitter
       link: https://twitter.com/CodeIgniterPhp
