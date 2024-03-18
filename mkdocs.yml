@@ -84,9 +84,12 @@ plugins:
       redirect_maps:
         'install.md': 'getting_started/install.md'
         'table.md': 'html/table.md'
+        'javascript.md': 'javascript/javascript.md'
 nav:
   - Home: index.md
   - Getting Started:
       - getting_started/install.md
   - Html:
       - html/table.md
+  - Javascript:
+      - javascript/javascript.md
