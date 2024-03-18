@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Try to fix deptrac">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/docs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeigniter4-datatables.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/1.welcome.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/2.installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3.table.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/table.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,6 +373,7 @@
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
+      <workItem from="1710744628855" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -592,7 +599,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710669587712</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Try to fix deptrac">
+      <option name="closed" value="true" />
+      <created>1710744811900</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1710744811900</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Try to fix deptrac">
+      <option name="closed" value="true" />
+      <created>1710744957065</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1710744957065</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

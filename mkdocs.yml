@@ -1,0 +1,92 @@
+site_name: codeigniter4-datatables
+site_description: Documentation for the Datatables support to your application made with the framework CodeIgniter 4
+
+theme:
+  name: material
+  logo: assets/flame.svg
+  favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Raleway
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: codeigniter
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - content.code.copy
+    - navigation.footer
+    - content.action.edit
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+extra:
+  homepage: https://codeigniter.com
+  generator: false
+
+  social:
+    - icon: material/github
+      link: https://github.com/codeigniter4/shield
+      name: GitHub
+    - icon: material/twitter
+      link: https://twitter.com/CodeIgniterPhp
+      name: X
+    - icon: material/forum
+      link: https://forum.codeigniter.com
+      name: Forum Codeigniter
+    - icon: material/slack
+      link: https://join.slack.com/t/codeigniterchat/shared_invite/zt-244xrrslc-l_I69AJSi5y2a2RVN~xIdQ
+      name: Slack
+
+site_url: https://shield.codeigniter.com/
+repo_url: https://github.com/codeigniter4/shield
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2023 CodeIgniter Foundation.
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: false
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/github.min.css
+  - assets/css/codeigniter.css
+  - assets/css/codeigniter_dark_mode.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js
+  - assets/js/hljs.js
+  - assets/js/curl.min.js
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - redirects:
+      redirect_maps:
+        'install.md': 'getting_started/install.md'
+        'table.md': 'html/table.md'
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting_started/install.md
+  - Html:
+      - html/table.md

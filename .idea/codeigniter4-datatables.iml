@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/build/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/build/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/tests/_support" isTestSource="true" packagePrefix="Tests\Support\" />
-      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="atsanna\DataTables\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/_support" isTestSource="true" packagePrefix="Tests\Support\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
