@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Some fix make and publish documentation">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add javascript section on the documentation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -375,6 +372,7 @@
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
       <workItem from="1710744628855" duration="6480000" />
+      <workItem from="1710768066076" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -680,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710749842389</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Add javascript section on the documentation">
+      <option name="closed" value="true" />
+      <created>1710768265018</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1710768265018</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +749,8 @@
     <MESSAGE value="Fix Links" />
     <MESSAGE value="Fix make and publish documentation" />
     <MESSAGE value="Some fix make and publish documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some fix make and publish documentation" />
+    <MESSAGE value="Add javascript section on the documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add javascript section on the documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

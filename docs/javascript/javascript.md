@@ -1,5 +1,8 @@
-## DataTables Javascript
+# DataTables Javascript
 We instantiate the class
+
+## The Javascript class
+This class allows you to obtain a complete script to execute datatables.
 
 ```php
 		$javascript = new \atsanna\DataTables\Javascript\DataTablesScript();
