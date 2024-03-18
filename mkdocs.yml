@@ -54,8 +54,8 @@ extra:
       link: https://join.slack.com/t/codeigniterchat/shared_invite/zt-244xrrslc-l_I69AJSi5y2a2RVN~xIdQ
       name: Slack
 
-site_url: https://shield.codeigniter.com/
-repo_url: https://github.com/codeigniter4/shield
+site_url: https://atsanna.github.io/codeigniter4-datatables
+repo_url: https://github.com/atsanna/codeigniter4-datatables
 edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2023 CodeIgniter Foundation.
 

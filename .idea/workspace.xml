@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Add link for the license" />
+    <list default="true" id="0464720e-1359-453b-8995-60faef15d7e1" name="Changes" comment="Try to fix build documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,6 +241,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Composer Script.Ci.executor": "Run",
+    "Composer Script.build-doc.executor": "Run",
     "Composer Script.ci.executor": "Run",
     "Composer Script.cs-fix.executor": "Run",
     "Composer Script.inspect.executor": "Run",
@@ -268,16 +271,16 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Composer Script.Ci">
+  <component name="RunManager" selected="Composer Script.build-doc">
     <configuration name="Ci" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="commandLineParameters" value="" />
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <option name="script" value="ci" />
       <method v="2" />
     </configuration>
-    <configuration name="analyze" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
+    <configuration name="build-doc" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <option name="script" value="analyze" />
+      <option name="script" value="build-doc" />
       <method v="2" />
     </configuration>
     <configuration name="ci" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
@@ -306,8 +309,8 @@
     </configuration>
     <list>
       <item itemvalue="Composer Script.Ci" />
+      <item itemvalue="Composer Script.build-doc" />
       <item itemvalue="Composer Script.ci" />
-      <item itemvalue="Composer Script.analyze" />
       <item itemvalue="Composer Script.cs-fix" />
       <item itemvalue="Composer Script.inspect" />
       <item itemvalue="Composer Script.test" />
@@ -315,11 +318,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Composer Script.build-doc" />
         <item itemvalue="Composer Script.ci" />
         <item itemvalue="Composer Script.inspect" />
         <item itemvalue="Composer Script.cs-fix" />
         <item itemvalue="Composer Script.test" />
-        <item itemvalue="Composer Script.analyze" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +373,7 @@
       <workItem from="1704625401398" duration="64000" />
       <workItem from="1706288826153" duration="710000" />
       <workItem from="1710505463170" duration="4621000" />
-      <workItem from="1710744628855" duration="4071000" />
+      <workItem from="1710744628855" duration="4397000" />
     </task>
     <task id="LOCAL-00001" summary="Add new test">
       <option name="closed" value="true" />
@@ -644,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710748558597</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Try to fix build documentation">
+      <option name="closed" value="true" />
+      <created>1710748923670</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1710748923670</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +714,8 @@
     <MESSAGE value="Add assets for documentation" />
     <MESSAGE value="Add link for the documentation" />
     <MESSAGE value="Add link for the license" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add link for the license" />
+    <MESSAGE value="Try to fix build documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to fix build documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
