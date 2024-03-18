@@ -22,5 +22,5 @@ jobs:
           pip3 install mkdocs-material
           pip3 install mkdocs-git-revision-date-localized-plugin
           pip3 install mkdocs-redirects
-      - name: Publish Documentation
+      - name: Publish Codeigniter4-Datatables Documentation
         run: mkdocs gh-deploy --force

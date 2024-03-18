@@ -1,5 +1,5 @@
-site_name: codeigniter4-datatables
-site_description: Documentation for the Datatables support to your application made with the framework CodeIgniter 4
+site_name: Codeigniter4-Datatables
+site_description: Documentation for Datatables support in your application built with the CodeIgniter 4 framework
 
 theme:
   name: material
@@ -37,27 +37,27 @@ theme:
     - search.share
 
 extra:
-  homepage: https://codeigniter.com
+  homepage: https://github.com/atsanna/codeigniter4-datatables
   generator: false
 
   social:
     - icon: material/github
       link: https://github.com/atsanna/codeigniter4-datatables
       name: GitHub
-    - icon: material/twitter
-      link: https://twitter.com/CodeIgniterPhp
-      name: X
-    - icon: material/forum
-      link: https://forum.codeigniter.com
-      name: Forum Codeigniter
-    - icon: material/slack
-      link: https://join.slack.com/t/codeigniterchat/shared_invite/zt-244xrrslc-l_I69AJSi5y2a2RVN~xIdQ
-      name: Slack
+ #   - icon: material/twitter
+ #     link: https://twitter.com/CodeIgniterPhp
+ #     name: X
+ #   - icon: material/forum
+ #     link: https://forum.codeigniter.com
+ #     name: Forum Codeigniter
+ #   - icon: material/slack
+ #     link: https://join.slack.com/t/codeigniterchat/shared_invite/zt-244xrrslc-l_I69AJSi5y2a2RVN~xIdQ
+ #     name: Slack
 
 site_url: https://atsanna.github.io/codeigniter4-datatables
 repo_url: https://github.com/atsanna/codeigniter4-datatables
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2023 CodeIgniter Foundation.
+copyright: Copyright &copy; 2024 Antonio Sanna.
 
 markdown_extensions:
   - pymdownx.superfences
