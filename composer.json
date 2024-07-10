@@ -36,7 +36,7 @@
 		"psr/container": "^2.0",
 		"qossmic/deptrac-shim": "^0.24.0 || ^1.0.2",
 		"vimeo/psalm": "^5.20",
-		"symfony/filesystem": "^5.4",
+		"symfony/filesystem": "^7.1",
 		"rector/rector": "^1.0.3",
         "sebastian/phpcpd": "^6.0.3"
     },
